@@ -67,12 +67,6 @@
     </image:image>
   </url>
   <url>
-    <loc>http://maarman.github.io/behavioral_economics.html</loc>
-    <lastmod>2024-01-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>http://maarman.github.io/optimization.html</loc>
     <lastmod>2024-01-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -127,14 +121,8 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://maarman.github.io/assets/gwynne_van_kaauwen_2021.pdf</loc>
-    <lastmod>2024-01-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://maarman.github.io/assets/rolling_gap_pedestrian.mp4</loc>
-    <lastmod>2024-01-16</lastmod>
+    <loc>http://maarman.github.io/behavioral_economics.html</loc>
+    <lastmod>2024-01-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -145,14 +133,8 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://maarman.github.io/assets/rolling_gap_pedestrian_tracked.mp4</loc>
-    <lastmod>2024-01-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://maarman.github.io/assets/nikzad_rezaie_2023.pdf</loc>
-    <lastmod>2024-01-10</lastmod>
+    <loc>http://maarman.github.io/assets/20240115_my_cv_for_website_v2.pdf</loc>
+    <lastmod>2024-01-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -163,14 +145,14 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://maarman.github.io/assets/9eceb3f6-9775-410b-a032-7d39264db941.mp4</loc>
-    <lastmod>2024-01-15</lastmod>
+    <loc>http://maarman.github.io/assets/rolling_gap_pedestrian_tracked.mp4</loc>
+    <lastmod>2024-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://maarman.github.io/assets/lanes_over_google_earth_red.html</loc>
-    <lastmod>2022-11-16</lastmod>
+    <loc>http://maarman.github.io/assets/rolling_gap_pedestrian.mp4</loc>
+    <lastmod>2024-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -181,7 +163,31 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://maarman.github.io/assets/9eceb3f6-9775-410b-a032-7d39264db941.mp4</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://maarman.github.io/assets/nikzad_rezaie_2023.pdf</loc>
+    <lastmod>2024-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://maarman.github.io/assets/lanes_over_google_earth_red.html</loc>
+    <lastmod>2022-11-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://maarman.github.io/assets/lotte_notelaers_2021.pdf</loc>
+    <lastmod>2024-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://maarman.github.io/assets/gwynne_van_kaauwen_2021.pdf</loc>
     <lastmod>2024-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

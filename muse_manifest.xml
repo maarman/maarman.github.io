@@ -1,10 +1,10 @@
-<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="maarman.github.io" resolutions="1x" timestamp="1705582699432">
+<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="maarman.github.io" resolutions="1x" timestamp="1705604065369">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
     <file name="master_a-master.css" crc="3907066525" ref="optimization:walking_data:behavioral_economics:ai_based:teaching:index:projects:mentoring:traffic_flow:microsimulation:rdms:data_fusion"/>
     <file name="nomq_preview_master_a-master.css" crc="413313442" ref="optimization:walking_data:behavioral_economics:ai_based:teaching:index:projects:mentoring:traffic_flow:microsimulation:rdms:data_fusion"/>
-    <file name="optimization.css" crc="336458953" ref="optimization"/>
-    <file name="nomq_optimization.css" crc="4160102209" ref="optimization"/>
+    <file name="optimization.css" crc="95920136" ref="optimization"/>
+    <file name="nomq_optimization.css" crc="463326250" ref="optimization"/>
     <file name="walking_data.css" crc="3969608645" ref="walking_data"/>
     <file name="nomq_walking_data.css" crc="3864073245" ref="walking_data"/>
     <file name="behavioral_economics.css" crc="4222710829" ref="behavioral_economics"/>
@@ -13,8 +13,8 @@
     <file name="nomq_ai_based.css" crc="3965232135" ref="ai_based"/>
     <file name="teaching.css" crc="454169258" ref="teaching"/>
     <file name="nomq_teaching.css" crc="4195497847" ref="teaching"/>
-    <file name="index.css" crc="338467158" ref="index"/>
-    <file name="nomq_index.css" crc="211531678" ref="index"/>
+    <file name="index.css" crc="225417731" ref="index"/>
+    <file name="nomq_index.css" crc="392898117" ref="index"/>
     <file name="projects.css" crc="4221838471" ref="projects"/>
     <file name="nomq_projects.css" crc="160473164" ref="projects"/>
     <file name="mentoring.css" crc="223957285" ref="mentoring"/>
@@ -47,6 +47,7 @@
     <file name="rolling_gap_pedestrian.mp4" crc="96443464" seo="true" mt="1705399654000"/>
     <file name="rolling_gap_pedestrian_tracked.mp4" crc="339495682" seo="true" mt="1705402768000"/>
     <file name="red_light.mp4" crc="128880425" seo="true" mt="1705399838000"/>
+    <file name="20240115_my_cv_for_website_v2.pdf" crc="283135606" seo="true" mt="1705603130000"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:projects:behavioral_economics:rdms:data_fusion:traffic_flow:walking_data:teaching:mentoring:ai_based:optimization:microsimulation"/>
@@ -134,6 +135,7 @@
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
     </file>
     <file name="ldin.png" crc="3834553521" ref="index">
       <caption webpage="index" alt=""/>
@@ -205,14 +207,13 @@
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
     </file>
-    <file name="photo-u1219-fr.jpg" crc="222644582" ref="index"/>
-    <file name="photo-u1219-fr2.jpg" crc="4000635776" ref="index"/>
-    <file name="photo-u1219-fr3.jpg" crc="133071715" ref="index"/>
-    <file name="photo-u1219-fr4.jpg" crc="117821580" ref="index"/>
-    <file name="photo-u1219-fr5.jpg" crc="3831899019" ref="index"/>
-    <file name="photo-u1219-fr6.jpg" crc="4048515301" ref="index"/>
-    <file name="photo-u1219-fr7.jpg" crc="4016150991" ref="index"/>
-    <file name="photo-u1219-fr8.jpg" crc="3944575724" ref="index"/>
+    <file name="photo-u1219-fr.jpg" crc="4000635776" ref="index"/>
+    <file name="photo-u1219-fr2.jpg" crc="133071715" ref="index"/>
+    <file name="photo-u1219-fr3.jpg" crc="117821580" ref="index"/>
+    <file name="photo-u1219-fr4.jpg" crc="3831899019" ref="index"/>
+    <file name="photo-u1219-fr5.jpg" crc="4048515301" ref="index"/>
+    <file name="photo-u1219-fr6.jpg" crc="4016150991" ref="index"/>
+    <file name="photo-u1219-fr7.jpg" crc="3944575724" ref="index"/>
     <file name="blank.gif" crc="4208392903" ref="index:projects:behavioral_economics:rdms:data_fusion:traffic_flow:walking_data:teaching:mentoring:ai_based:optimization:microsimulation"/>
     <file name="be.jpg" crc="108189440" seo="true" ref="projects">
       <caption webpage="projects" alt=""/>
@@ -616,25 +617,23 @@
     <file name="classification-u6047-fr9.jpg" crc="3847974082" ref="ai_based"/>
     <file name="rl___-u6061-fr7.jpg" crc="3819190656" ref="ai_based"/>
     <file name="pcs____-u6075-3-fr5.jpg" crc="60386735" ref="ai_based"/>
-    <file name="or_1.jpg" crc="3928245372" ref="optimization"/>
-    <file name="or_1-u6119-fr.jpg" crc="117737891" ref="optimization"/>
-    <file name="or_1-u6119-fr2.jpg" crc="319894505" ref="optimization"/>
-    <file name="or_1-u6119-fr3.jpg" crc="137527952" ref="optimization"/>
-    <file name="or_1-u6119-fr4.jpg" crc="337029486" ref="optimization"/>
-    <file name="or_1-u6119-fr5.jpg" crc="421120292" ref="optimization"/>
-    <file name="or_1-u6119-fr6.jpg" crc="441049759" ref="optimization"/>
-    <file name="or_1-u6119-fr7.jpg" crc="328001186" ref="optimization"/>
+    <file name="or_1.jpg" crc="232595273" ref="optimization"/>
+    <file name="or_1-u6119-fr.jpg" crc="240054738" ref="optimization"/>
+    <file name="or_1-u6119-fr2.jpg" crc="342733520" ref="optimization"/>
+    <file name="or_1-u6119-fr3.jpg" crc="4006105250" ref="optimization"/>
+    <file name="or_1-u6119-fr4.jpg" crc="4254026608" ref="optimization"/>
+    <file name="or_1-u6119-fr5.jpg" crc="3854294938" ref="optimization"/>
   </folder>
-  <file name="index.html" crc="4158732709" seo="true" mt="1705573917874" redirect="true"/>
-  <file name="projects.html" crc="3891104663" seo="true" mt="1705573917874" redirect="true"/>
-  <file name="behavioral_economics.html" crc="3836668607" seo="true" mt="1705573917874" redirect="true"/>
-  <file name="rdms.html" crc="4077562224" seo="true" mt="1705573917874" redirect="true"/>
-  <file name="data_fusion.html" crc="515311280" seo="true" mt="1705573917874" redirect="true"/>
-  <file name="traffic_flow.html" crc="98881921" seo="true" mt="1705573917874" redirect="true"/>
-  <file name="walking_data.html" crc="3957982508" seo="true" mt="1705582656004" redirect="true"/>
-  <file name="teaching.html" crc="3909778201" seo="true" mt="1705573917874" redirect="true"/>
-  <file name="mentoring.html" crc="334791042" seo="true" mt="1705573917874" redirect="true"/>
-  <file name="ai_based.html" crc="3843877983" seo="true" mt="1705573917874" redirect="true"/>
-  <file name="optimization.html" crc="4116713967" seo="true" mt="1705582656290" redirect="true"/>
-  <file name="microsimulation.html" crc="3994149588" seo="true" mt="1705573917874" redirect="true"/>
+  <file name="index.html" crc="3998993757" seo="true" mt="1705603187337" redirect="true"/>
+  <file name="projects.html" crc="166844735" seo="true" mt="1705603187337" redirect="true"/>
+  <file name="behavioral_economics.html" crc="29757527" seo="true" mt="1705603187337" redirect="true"/>
+  <file name="rdms.html" crc="57609378" seo="true" mt="1705603187337" redirect="true"/>
+  <file name="data_fusion.html" crc="421835033" seo="true" mt="1705603187337" redirect="true"/>
+  <file name="traffic_flow.html" crc="309433876" seo="true" mt="1705603187337" redirect="true"/>
+  <file name="walking_data.html" crc="3762641630" seo="true" mt="1705603187337" redirect="true"/>
+  <file name="teaching.html" crc="444792865" seo="true" mt="1705603187337" redirect="true"/>
+  <file name="mentoring.html" crc="3917738222" seo="true" mt="1705603187337" redirect="true"/>
+  <file name="ai_based.html" crc="3901325607" seo="true" mt="1705603187337" redirect="true"/>
+  <file name="optimization.html" crc="3842558883" seo="true" mt="1705604022835" redirect="true"/>
+  <file name="microsimulation.html" crc="393997320" seo="true" mt="1705603187337" redirect="true"/>
 </manifest>
