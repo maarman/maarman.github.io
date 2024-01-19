@@ -1,4 +1,4 @@
-<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="maarman.github.io" resolutions="1x" timestamp="1705604065369">
+<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="maarman.github.io" resolutions="1x" timestamp="1705671050312">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
     <file name="master_a-master.css" crc="3907066525" ref="optimization:walking_data:behavioral_economics:ai_based:teaching:index:projects:mentoring:traffic_flow:microsimulation:rdms:data_fusion"/>
@@ -7,8 +7,8 @@
     <file name="nomq_optimization.css" crc="463326250" ref="optimization"/>
     <file name="walking_data.css" crc="3969608645" ref="walking_data"/>
     <file name="nomq_walking_data.css" crc="3864073245" ref="walking_data"/>
-    <file name="behavioral_economics.css" crc="4222710829" ref="behavioral_economics"/>
-    <file name="nomq_behavioral_economics.css" crc="361826836" ref="behavioral_economics"/>
+    <file name="behavioral_economics.css" crc="534642578" ref="behavioral_economics"/>
+    <file name="nomq_behavioral_economics.css" crc="3810061739" ref="behavioral_economics"/>
     <file name="ai_based.css" crc="4029295113" ref="ai_based"/>
     <file name="nomq_ai_based.css" crc="3965232135" ref="ai_based"/>
     <file name="teaching.css" crc="454169258" ref="teaching"/>
@@ -25,8 +25,8 @@
     <file name="nomq_microsimulation.css" crc="3825872881" ref="microsimulation"/>
     <file name="rdms.css" crc="4270701975" ref="rdms"/>
     <file name="nomq_rdms.css" crc="4133929923" ref="rdms"/>
-    <file name="data_fusion.css" crc="180989144" ref="data_fusion"/>
-    <file name="nomq_data_fusion.css" crc="3773644303" ref="data_fusion"/>
+    <file name="data_fusion.css" crc="437119656" ref="data_fusion"/>
+    <file name="nomq_data_fusion.css" crc="4027043834" ref="data_fusion"/>
   </folder>
   <folder name="fonts">
     <file name="bookantiqua.woff" crc="3849360083"/>
@@ -335,49 +335,94 @@
       <caption webpage="projects" alt=""/>
       <caption webpage="projects" alt=""/>
     </file>
-    <file name="tnp7.jpg" crc="3877934761" ref="behavioral_economics"/>
-    <file name="3002.jpg" crc="3782348667" ref="behavioral_economics"/>
-    <file name="3003.jpg" crc="3933657701" ref="behavioral_economics">
+    <file name="3002.jpg" crc="3791129592" ref="behavioral_economics">
       <caption webpage="behavioral_economics" alt=""/>
       <caption webpage="behavioral_economics" alt=""/>
       <caption webpage="behavioral_economics" alt=""/>
       <caption webpage="behavioral_economics" alt=""/>
       <caption webpage="behavioral_economics" alt=""/>
     </file>
-    <file name="figure 1-b.jpg" crc="22275961" ref="behavioral_economics"/>
-    <file name="tnp5.jpg" crc="3840471636" ref="behavioral_economics"/>
-    <file name="3002-u1751-fr.jpg" crc="354642534" ref="behavioral_economics"/>
-    <file name="tnp7-u1708-fr.jpg" crc="29164452" ref="behavioral_economics"/>
-    <file name="3003-u1754-fr.jpg" crc="4238020768" ref="behavioral_economics"/>
-    <file name="figure 1-b-u1719-fr.jpg" crc="456574300" ref="behavioral_economics"/>
-    <file name="tnp5-u1697-fr.jpg" crc="4126892624" ref="behavioral_economics"/>
-    <file name="tnp7-u1708-fr2.jpg" crc="404188058" ref="behavioral_economics"/>
-    <file name="3003-u1754-fr2.jpg" crc="3834107748" ref="behavioral_economics"/>
-    <file name="figure 1-b-u1719-fr2.jpg" crc="201292386" ref="behavioral_economics"/>
-    <file name="tnp5-u1697-fr2.jpg" crc="270893677" ref="behavioral_economics"/>
-    <file name="tnp7-u1708-fr3.jpg" crc="4199823594" ref="behavioral_economics"/>
-    <file name="3003-u1754-fr3.jpg" crc="3872762988" ref="behavioral_economics"/>
-    <file name="figure 1-b-u1719-fr3.jpg" crc="278206652" ref="behavioral_economics"/>
-    <file name="tnp5-u1697-fr3.jpg" crc="4200250437" ref="behavioral_economics"/>
-    <file name="3002-u1751-fr2.jpg" crc="302407307" ref="behavioral_economics"/>
-    <file name="tnp7-u1708-fr4.jpg" crc="3836557079" ref="behavioral_economics"/>
-    <file name="figure 1-b-u1719-fr4.jpg" crc="63512308" ref="behavioral_economics"/>
-    <file name="tnp5-u1697-fr4.jpg" crc="230109019" ref="behavioral_economics"/>
-    <file name="3002-u1751-fr3.jpg" crc="4016278923" ref="behavioral_economics"/>
-    <file name="tnp7-u1708-fr5.jpg" crc="3591533" ref="behavioral_economics"/>
-    <file name="3003-u1754-fr4.jpg" crc="4102624002" ref="behavioral_economics"/>
-    <file name="figure 1-b-u1719-fr5.jpg" crc="27744287" ref="behavioral_economics"/>
-    <file name="tnp5-u1697-fr5.jpg" crc="218422584" ref="behavioral_economics"/>
-    <file name="3002-u1751-fr4.jpg" crc="3788162911" ref="behavioral_economics"/>
-    <file name="tnp7-u1708-fr6.jpg" crc="343745551" ref="behavioral_economics"/>
-    <file name="3003-u1754-fr5.jpg" crc="3820831588" ref="behavioral_economics"/>
-    <file name="figure 1-b-u1719-fr6.jpg" crc="285813719" ref="behavioral_economics"/>
-    <file name="tnp5-u1697-fr6.jpg" crc="293965591" ref="behavioral_economics"/>
-    <file name="3002-u1751-fr5.jpg" crc="513941586" ref="behavioral_economics"/>
-    <file name="tnp7-u1708-fr7.jpg" crc="172205763" ref="behavioral_economics"/>
-    <file name="3003-u1754-fr6.jpg" crc="367085207" ref="behavioral_economics"/>
-    <file name="figure 1-b-u1719-fr7.jpg" crc="4114041168" ref="behavioral_economics"/>
-    <file name="tnp5-u1697-fr7.jpg" crc="326550634" ref="behavioral_economics"/>
+    <file name="be_1.jpg" crc="4158259179" ref="behavioral_economics">
+      <caption webpage="behavioral_economics" alt=""/>
+    </file>
+    <file name="be_2.jpg" crc="302674039" ref="behavioral_economics">
+      <caption webpage="behavioral_economics" alt=""/>
+    </file>
+    <file name="3003.jpg" crc="98443064" ref="behavioral_economics">
+      <caption webpage="behavioral_economics" alt=""/>
+      <caption webpage="behavioral_economics" alt=""/>
+      <caption webpage="behavioral_economics" alt=""/>
+      <caption webpage="behavioral_economics" alt=""/>
+    </file>
+    <file name="tnp7.png" crc="26553562" ref="behavioral_economics">
+      <caption webpage="behavioral_economics" alt=""/>
+      <caption webpage="behavioral_economics" alt=""/>
+      <caption webpage="behavioral_economics" alt=""/>
+      <caption webpage="behavioral_economics" alt=""/>
+    </file>
+    <file name="be_51.jpg" crc="3887445485" ref="behavioral_economics">
+      <caption webpage="behavioral_economics" alt=""/>
+      <caption webpage="behavioral_economics" alt=""/>
+      <caption webpage="behavioral_economics" alt=""/>
+    </file>
+    <file name="be_52.jpg" crc="4084281973" ref="behavioral_economics">
+      <caption webpage="behavioral_economics" alt=""/>
+      <caption webpage="behavioral_economics" alt=""/>
+      <caption webpage="behavioral_economics" alt=""/>
+    </file>
+    <file name="be_51-u7500-fr.jpg" crc="3763404517" ref="behavioral_economics"/>
+    <file name="be_52-u7514-fr.jpg" crc="330962207" ref="behavioral_economics"/>
+    <file name="3003-u7473-fr.jpg" crc="4146055025" ref="behavioral_economics"/>
+    <file name="tnp7-u1708-fr.png" crc="4163835249" ref="behavioral_economics"/>
+    <file name="be_51-u7500-fr2.jpg" crc="3852819519" ref="behavioral_economics"/>
+    <file name="be_52-u7514-fr2.jpg" crc="37111430" ref="behavioral_economics"/>
+    <file name="3002-u7429-fr.jpg" crc="3913337597" ref="behavioral_economics"/>
+    <file name="be_1-u7407-fr.jpg" crc="398395704" ref="behavioral_economics"/>
+    <file name="3003-u7473-fr2.jpg" crc="399514063" ref="behavioral_economics"/>
+    <file name="tnp7-u1708-fr2.png" crc="4194002844" ref="behavioral_economics"/>
+    <file name="be_51-u7500-fr3.jpg" crc="317447586" ref="behavioral_economics"/>
+    <file name="be_52-u7514-fr3.jpg" crc="3889725870" ref="behavioral_economics"/>
+    <file name="3002-u7429-fr2.jpg" crc="19933465" ref="behavioral_economics"/>
+    <file name="be_1-u7407-fr2.jpg" crc="407020076" ref="behavioral_economics"/>
+    <file name="3003-u7473-fr3.jpg" crc="324555318" ref="behavioral_economics"/>
+    <file name="tnp7-u1708-fr3.png" crc="3845387215" ref="behavioral_economics"/>
+    <file name="be_51-u7500-fr4.jpg" crc="123566889" ref="behavioral_economics"/>
+    <file name="be_52-u7514-fr4.jpg" crc="3999223683" ref="behavioral_economics"/>
+    <file name="3002-u7429-fr3.jpg" crc="299061468" ref="behavioral_economics"/>
+    <file name="be_1-u7407-fr3.jpg" crc="130384725" ref="behavioral_economics"/>
+    <file name="be_2-u7451-fr.jpg" crc="245195814" ref="behavioral_economics"/>
+    <file name="3003-u7473-fr4.jpg" crc="3766207763" ref="behavioral_economics"/>
+    <file name="tnp7-u1708-fr4.png" crc="4151056629" ref="behavioral_economics"/>
+    <file name="be_51-u7500-fr5.jpg" crc="139523977" ref="behavioral_economics"/>
+    <file name="be_52-u7514-fr5.jpg" crc="472448647" ref="behavioral_economics"/>
+    <file name="3002-u7429-fr4.jpg" crc="297392544" ref="behavioral_economics"/>
+    <file name="be_1-u7407-fr4.jpg" crc="3903868570" ref="behavioral_economics"/>
+    <file name="be_2-u7451-fr2.jpg" crc="3811579796" ref="behavioral_economics"/>
+    <file name="3003-u7473-fr5.jpg" crc="4215091812" ref="behavioral_economics"/>
+    <file name="tnp7-u1708-fr5.png" crc="412687705" ref="behavioral_economics"/>
+    <file name="be_51-u7500-fr6.jpg" crc="4264351772" ref="behavioral_economics"/>
+    <file name="be_52-u7514-fr6.jpg" crc="118704396" ref="behavioral_economics"/>
+    <file name="3002-u7429-fr5.jpg" crc="228008540" ref="behavioral_economics"/>
+    <file name="be_1-u7407-fr5.jpg" crc="451936480" ref="behavioral_economics"/>
+    <file name="be_2-u7451-fr3.jpg" crc="459597015" ref="behavioral_economics"/>
+    <file name="3003-u7473-fr6.jpg" crc="179139422" ref="behavioral_economics"/>
+    <file name="tnp7-u1708-fr6.png" crc="3918429011" ref="behavioral_economics"/>
+    <file name="be_51-u7500-fr7.jpg" crc="4289316089" ref="behavioral_economics"/>
+    <file name="be_52-u7514-fr7.jpg" crc="3845366630" ref="behavioral_economics"/>
+    <file name="3002-u7429-fr6.jpg" crc="4031267464" ref="behavioral_economics"/>
+    <file name="be_1-u7407-fr6.jpg" crc="334531007" ref="behavioral_economics"/>
+    <file name="be_2-u7451-fr4.jpg" crc="4035762045" ref="behavioral_economics"/>
+    <file name="3003-u7473-fr7.jpg" crc="3821558531" ref="behavioral_economics"/>
+    <file name="tnp7-u1708-fr7.png" crc="60363378" ref="behavioral_economics"/>
+    <file name="be_51-u7500-fr8.jpg" crc="4246099092" ref="behavioral_economics"/>
+    <file name="be_52-u7514-fr8.jpg" crc="4192186846" ref="behavioral_economics"/>
+    <file name="3002-u7429-fr7.jpg" crc="3853306189" ref="behavioral_economics"/>
+    <file name="be_1-u7407-fr7.jpg" crc="3862774361" ref="behavioral_economics"/>
+    <file name="be_2-u7451-fr5.jpg" crc="248895943" ref="behavioral_economics"/>
+    <file name="3003-u7473-fr8.jpg" crc="25137113" ref="behavioral_economics"/>
+    <file name="tnp7-u1708-fr8.png" crc="3010528" ref="behavioral_economics"/>
+    <file name="be_51-u7500-fr9.jpg" crc="4290662279" ref="behavioral_economics"/>
+    <file name="be_52-u7514-fr9.jpg" crc="498893680" ref="behavioral_economics"/>
     <file name="rdm_2.jpg" crc="3900598649" ref="rdms">
       <caption webpage="rdms" alt=""/>
     </file>
@@ -417,26 +462,25 @@
     <file name="df2-u4253-fr2.jpg" crc="280813328" ref="data_fusion"/>
     <file name="df3-u4440-fr2.png" crc="3826050162" ref="data_fusion"/>
     <file name="df5-u4497-fr3.jpg" crc="3937647019" ref="data_fusion"/>
-    <file name="df2-u4253-fr3.jpg" crc="3938246786" ref="data_fusion"/>
-    <file name="df3-u4440-fr3.png" crc="503274963" ref="data_fusion"/>
-    <file name="df5-u4497-fr4.jpg" crc="4070939767" ref="data_fusion"/>
+    <file name="df2-u4253-fr3.jpg" crc="3799989407" ref="data_fusion"/>
+    <file name="df5-u4497-fr4.jpg" crc="198471970" ref="data_fusion"/>
     <file name="df2-u4253-fr4.jpg" crc="322797204" ref="data_fusion"/>
-    <file name="df3-u4440-fr4.png" crc="3848036176" ref="data_fusion"/>
+    <file name="df3-u4440-fr3.png" crc="3848036176" ref="data_fusion"/>
     <file name="df5-u4497-fr5.jpg" crc="148305022" ref="data_fusion"/>
     <file name="df2-u4253-fr5.jpg" crc="4277062807" ref="data_fusion"/>
-    <file name="df3-u4440-fr5.png" crc="290131884" ref="data_fusion"/>
+    <file name="df3-u4440-fr4.png" crc="290131884" ref="data_fusion"/>
     <file name="df5-u4497-fr6.jpg" crc="341077104" ref="data_fusion"/>
     <file name="df2-u4253-fr6.jpg" crc="462354366" ref="data_fusion"/>
-    <file name="df3-u4440-fr6.png" crc="4189791732" ref="data_fusion"/>
+    <file name="df3-u4440-fr5.png" crc="4189791732" ref="data_fusion"/>
     <file name="df5-u4497-fr7.jpg" crc="4230445359" ref="data_fusion"/>
     <file name="df2-u4253-fr7.jpg" crc="3771731275" ref="data_fusion"/>
-    <file name="df3-u4440-fr7.png" crc="22385206" ref="data_fusion"/>
+    <file name="df3-u4440-fr6.png" crc="22385206" ref="data_fusion"/>
     <file name="df5-u4497-fr8.jpg" crc="4077078427" ref="data_fusion"/>
-    <file name="df2-u4253-fr8.jpg" crc="3898826139" ref="data_fusion"/>
-    <file name="df3-u4440-fr8.png" crc="4073784330" ref="data_fusion"/>
-    <file name="df5-u4497-fr9.jpg" crc="110469233" ref="data_fusion"/>
+    <file name="df2-u4253-fr8.jpg" crc="4147224660" ref="data_fusion"/>
+    <file name="df3-u4440-fr7.png" crc="225445440" ref="data_fusion"/>
+    <file name="df5-u4497-fr9.jpg" crc="230056576" ref="data_fusion"/>
     <file name="df2-u4253-fr9.jpg" crc="3994544827" ref="data_fusion"/>
-    <file name="df3-u4440-fr9.png" crc="4223282484" ref="data_fusion"/>
+    <file name="df3-u4440-fr8.png" crc="4223282484" ref="data_fusion"/>
     <file name="df5-u4497-fr10.jpg" crc="4220147308" ref="data_fusion"/>
     <file name="lcm_imp_v.jpg" crc="3914814614" ref="traffic_flow">
       <caption webpage="traffic_flow" alt=""/>
@@ -626,12 +670,12 @@
   </folder>
   <file name="index.html" crc="3998993757" seo="true" mt="1705603187337" redirect="true"/>
   <file name="projects.html" crc="166844735" seo="true" mt="1705603187337" redirect="true"/>
-  <file name="behavioral_economics.html" crc="29757527" seo="true" mt="1705603187337" redirect="true"/>
+  <file name="behavioral_economics.html" crc="4161985026" seo="true" mt="1705671006508" redirect="true"/>
   <file name="rdms.html" crc="57609378" seo="true" mt="1705603187337" redirect="true"/>
-  <file name="data_fusion.html" crc="421835033" seo="true" mt="1705603187337" redirect="true"/>
+  <file name="data_fusion.html" crc="4165942055" seo="true" mt="1705605136579" redirect="true"/>
   <file name="traffic_flow.html" crc="309433876" seo="true" mt="1705603187337" redirect="true"/>
   <file name="walking_data.html" crc="3762641630" seo="true" mt="1705603187337" redirect="true"/>
-  <file name="teaching.html" crc="444792865" seo="true" mt="1705603187337" redirect="true"/>
+  <file name="teaching.html" crc="4290749965" seo="true" mt="1705603187337" redirect="true"/>
   <file name="mentoring.html" crc="3917738222" seo="true" mt="1705603187337" redirect="true"/>
   <file name="ai_based.html" crc="3901325607" seo="true" mt="1705603187337" redirect="true"/>
   <file name="optimization.html" crc="3842558883" seo="true" mt="1705604022835" redirect="true"/>
