@@ -1,4 +1,4 @@
-<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="maarman.github.io" resolutions="1x" timestamp="1710340006081">
+<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="maarman.github.io" resolutions="1x" timestamp="1710342684483">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
     <file name="master_a-master.css" crc="4056267900" ref="optimization:data_fusion:projects:ai_based:mentoring:traffic_flow:behavioral_economics:teaching:walking_data:rdms:microsimulation:index"/>
@@ -15,8 +15,8 @@
     <file name="nomq_mentoring.css" crc="4027933658" ref="mentoring"/>
     <file name="traffic_flow.css" crc="4022261638" ref="traffic_flow"/>
     <file name="nomq_traffic_flow.css" crc="281485048" ref="traffic_flow"/>
-    <file name="behavioral_economics.css" crc="3937299396" ref="behavioral_economics"/>
-    <file name="nomq_behavioral_economics.css" crc="3970087238" ref="behavioral_economics"/>
+    <file name="behavioral_economics.css" crc="3839210553" ref="behavioral_economics"/>
+    <file name="nomq_behavioral_economics.css" crc="144378364" ref="behavioral_economics"/>
     <file name="teaching.css" crc="3835107104" ref="teaching"/>
     <file name="nomq_teaching.css" crc="4195497847" ref="teaching"/>
     <file name="walking_data.css" crc="75340324" ref="walking_data"/>
@@ -337,65 +337,65 @@
       <caption webpage="behavioral_economics" alt=""/>
       <caption webpage="behavioral_economics" alt=""/>
     </file>
-    <file name="behavioral_economics(tba)_f7.jpg" crc="350317709" ref="behavioral_economics">
+    <file name="behavioral_economics(tba)_f6.jpg" crc="3887445485" ref="behavioral_economics">
       <caption webpage="behavioral_economics" alt=""/>
       <caption webpage="behavioral_economics" alt=""/>
       <caption webpage="behavioral_economics" alt=""/>
     </file>
     <file name="be_52-u7514-fr.jpg" crc="494082697" ref="behavioral_economics"/>
     <file name="be_52-u7514-fr2.jpg" crc="4084281973" ref="behavioral_economics"/>
-    <file name="behavioral_economics(tba)_f7-u7500-fr.jpg" crc="36996721" ref="behavioral_economics"/>
+    <file name="behavioral_economics(tba)_f6-u7500-fr.jpg" crc="3763404517" ref="behavioral_economics"/>
     <file name="be_52-u7514-fr3.jpg" crc="132592752" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f4-u7473-fr.jpg" crc="4146055025" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f5-u1708-fr.jpg" crc="3792088583" ref="behavioral_economics"/>
-    <file name="behavioral_economics(tba)_f7-u7500-fr2.jpg" crc="4060929834" ref="behavioral_economics"/>
+    <file name="behavioral_economics(tba)_f6-u7500-fr2.jpg" crc="3852819519" ref="behavioral_economics"/>
     <file name="be_52-u7514-fr4.jpg" crc="9923531" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f1-u7429-fr.jpg" crc="3913337597" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f2-u7407-fr.jpg" crc="398395704" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f4-u7473-fr2.jpg" crc="399514063" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f5-u1708-fr2.jpg" crc="4147331750" ref="behavioral_economics"/>
-    <file name="behavioral_economics(tba)_f7-u7500-fr3.jpg" crc="4069403654" ref="behavioral_economics"/>
+    <file name="behavioral_economics(tba)_f6-u7500-fr3.jpg" crc="317447586" ref="behavioral_economics"/>
     <file name="be_52-u7514-fr5.jpg" crc="405789416" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f1-u7429-fr2.jpg" crc="19933465" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f2-u7407-fr2.jpg" crc="407020076" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f4-u7473-fr3.jpg" crc="324555318" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f5-u1708-fr3.jpg" crc="3969230336" ref="behavioral_economics"/>
-    <file name="behavioral_economics(tba)_f7-u7500-fr4.jpg" crc="494067490" ref="behavioral_economics"/>
+    <file name="behavioral_economics(tba)_f6-u7500-fr4.jpg" crc="123566889" ref="behavioral_economics"/>
     <file name="be_52-u7514-fr6.jpg" crc="138473737" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f1-u7429-fr3.jpg" crc="299061468" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f2-u7407-fr3.jpg" crc="130384725" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f3-u7451-fr.jpg" crc="245195814" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f4-u7473-fr4.jpg" crc="3766207763" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f5-u1708-fr4.jpg" crc="409857318" ref="behavioral_economics"/>
-    <file name="behavioral_economics(tba)_f7-u7500-fr5.jpg" crc="51606921" ref="behavioral_economics"/>
+    <file name="behavioral_economics(tba)_f6-u7500-fr5.jpg" crc="139523977" ref="behavioral_economics"/>
     <file name="be_52-u7514-fr7.jpg" crc="421211211" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f1-u7429-fr4.jpg" crc="297392544" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f2-u7407-fr4.jpg" crc="3903868570" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f3-u7451-fr2.jpg" crc="3811579796" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f4-u7473-fr5.jpg" crc="4215091812" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f5-u1708-fr5.jpg" crc="265288786" ref="behavioral_economics"/>
-    <file name="behavioral_economics(tba)_f7-u7500-fr6.jpg" crc="4106529761" ref="behavioral_economics"/>
+    <file name="behavioral_economics(tba)_f6-u7500-fr6.jpg" crc="4264351772" ref="behavioral_economics"/>
     <file name="be_52-u7514-fr8.jpg" crc="286901557" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f1-u7429-fr5.jpg" crc="228008540" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f2-u7407-fr5.jpg" crc="451936480" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f3-u7451-fr3.jpg" crc="459597015" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f4-u7473-fr6.jpg" crc="179139422" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f5-u1708-fr6.jpg" crc="301749364" ref="behavioral_economics"/>
-    <file name="behavioral_economics(tba)_f7-u7500-fr7.jpg" crc="278284259" ref="behavioral_economics"/>
+    <file name="behavioral_economics(tba)_f6-u7500-fr7.jpg" crc="4289316089" ref="behavioral_economics"/>
     <file name="be_52-u7514-fr9.jpg" crc="471782856" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f1-u7429-fr6.jpg" crc="4031267464" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f2-u7407-fr6.jpg" crc="334531007" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f3-u7451-fr4.jpg" crc="4035762045" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f4-u7473-fr7.jpg" crc="3821558531" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f5-u1708-fr7.jpg" crc="4279604079" ref="behavioral_economics"/>
-    <file name="behavioral_economics(tba)_f7-u7500-fr8.jpg" crc="3987148104" ref="behavioral_economics"/>
+    <file name="behavioral_economics(tba)_f6-u7500-fr8.jpg" crc="4246099092" ref="behavioral_economics"/>
     <file name="be_52-u7514-fr10.jpg" crc="104018999" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f1-u7429-fr7.jpg" crc="3853306189" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f2-u7407-fr7.jpg" crc="3862774361" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f3-u7451-fr5.jpg" crc="248895943" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f4-u7473-fr8.jpg" crc="25137113" ref="behavioral_economics"/>
     <file name="behavioral_economics(tba)_f5-u1708-fr8.jpg" crc="4123524282" ref="behavioral_economics"/>
-    <file name="behavioral_economics(tba)_f7-u7500-fr9.jpg" crc="4266456003" ref="behavioral_economics"/>
+    <file name="behavioral_economics(tba)_f6-u7500-fr9.jpg" crc="4290662279" ref="behavioral_economics"/>
     <file name="be_52-u7514-fr11.jpg" crc="502013843" ref="behavioral_economics"/>
     <file name="rdm_2.jpg" crc="3900598649" ref="rdms">
       <caption webpage="rdms" alt=""/>
@@ -642,14 +642,14 @@
     <file name="or_1-u6119-fr4.jpg" crc="4254026608" ref="optimization"/>
     <file name="or_1-u6119-fr5.jpg" crc="3854294938" ref="optimization"/>
   </folder>
-  <file name="index.html" crc="61925018" seo="true" mt="1710339796510" redirect="true"/>
+  <file name="index.html" crc="4118360794" seo="true" mt="1710342410248" redirect="true"/>
   <file name="projects.html" crc="4274857437" seo="true" mt="1710339926809" redirect="true"/>
-  <file name="behavioral_economics.html" crc="3815304938" seo="true" mt="1710339797017" redirect="true"/>
+  <file name="behavioral_economics.html" crc="3887156055" seo="true" mt="1710342633420" redirect="true"/>
   <file name="rdms.html" crc="4091433699" seo="true" mt="1710339796507" redirect="true"/>
-  <file name="data_fusion.html" crc="4033276873" seo="true" mt="1710339796507" redirect="true"/>
+  <file name="data_fusion.html" crc="4240013648" seo="true" mt="1710339796507" redirect="true"/>
   <file name="traffic_flow.html" crc="3806443169" seo="true" mt="1710339796507" redirect="true"/>
   <file name="walking_data.html" crc="3981615380" seo="true" mt="1710339796507" redirect="true"/>
-  <file name="teaching.html" crc="4294710696" seo="true" mt="1710339796507" redirect="true"/>
+  <file name="teaching.html" crc="363872287" seo="true" mt="1710339796507" redirect="true"/>
   <file name="mentoring.html" crc="242941384" seo="true" mt="1710339796507" redirect="true"/>
   <file name="ai_based.html" crc="3902422607" seo="true" mt="1710339796507" redirect="true"/>
   <file name="optimization.html" crc="370483207" seo="true" mt="1710339796507" redirect="true"/>
