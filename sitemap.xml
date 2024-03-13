@@ -2,127 +2,109 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://maarman.github.io/index.html</loc>
-    <lastmod>2024-01-18</lastmod>
+    <lastmod>2024-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://maarman.github.io/projects.html</loc>
-    <lastmod>2024-01-18</lastmod>
+    <lastmod>2024-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <image:image>
-      <image:loc>http://maarman.github.io/images/be.jpg</image:loc>
+      <image:loc>http://maarman.github.io/images/projects_behavioral_economics_(travel_behavior).png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>http://maarman.github.io/images/rdm_1.jpg</image:loc>
+      <image:loc>http://maarman.github.io/images/projects_rdm.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>http://maarman.github.io/images/df1248x133.jpg</image:loc>
+      <image:loc>http://maarman.github.io/images/projects_datafusion.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>http://maarman.github.io/images/lcm_emp248x102.jpg</image:loc>
+      <image:loc>http://maarman.github.io/images/projects_trafficflowoperations.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>http://maarman.github.io/images/3001255x146.jpg</image:loc>
+      <image:loc>http://maarman.github.io/images/projects_analysiswalkingdata.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>http://maarman.github.io/images/ml1.png</image:loc>
+      <image:loc>http://maarman.github.io/images/projects_ml.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>http://maarman.github.io/images/or3255x107.jpg</image:loc>
+      <image:loc>http://maarman.github.io/images/projects_or.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>http://maarman.github.io/images/or3241x101.jpg</image:loc>
+      <image:loc>http://maarman.github.io/images/projects_behavioral_economics_(travel_behavior)292x185.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>http://maarman.github.io/images/df1.jpg</image:loc>
+      <image:loc>http://maarman.github.io/images/projects_rdm251x201.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>http://maarman.github.io/images/lcm_emp.jpg</image:loc>
+      <image:loc>http://maarman.github.io/images/projects_behavioral_economics_(travel_behavior)235x149.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>http://maarman.github.io/images/3001.jpg</image:loc>
+      <image:loc>http://maarman.github.io/images/projects_rdm196x157.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>http://maarman.github.io/images/or3.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>http://maarman.github.io/images/rdm_1196x157.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>http://maarman.github.io/images/df1243x130.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>http://maarman.github.io/images/lcm_emp235x96.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>http://maarman.github.io/images/3001231x132.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>http://maarman.github.io/images/or3292x122.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>http://maarman.github.io/images/3001243x139.jpg</image:loc>
+      <image:loc>http://maarman.github.io/images/projects_behavioral_economics_(travel_behavior)230x146.png</image:loc>
     </image:image>
   </url>
   <url>
     <loc>http://maarman.github.io/optimization.html</loc>
-    <lastmod>2024-01-18</lastmod>
+    <lastmod>2024-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://maarman.github.io/ai_based.html</loc>
-    <lastmod>2024-01-18</lastmod>
+    <lastmod>2024-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://maarman.github.io/microsimulation.html</loc>
-    <lastmod>2024-01-18</lastmod>
+    <lastmod>2024-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://maarman.github.io/teaching.html</loc>
-    <lastmod>2024-01-18</lastmod>
+    <lastmod>2024-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://maarman.github.io/walking_data.html</loc>
-    <lastmod>2024-01-18</lastmod>
+    <lastmod>2024-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://maarman.github.io/mentoring.html</loc>
-    <lastmod>2024-01-18</lastmod>
+    <lastmod>2024-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://maarman.github.io/data_fusion.html</loc>
-    <lastmod>2024-01-18</lastmod>
+    <lastmod>2024-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://maarman.github.io/rdms.html</loc>
-    <lastmod>2024-01-18</lastmod>
+    <lastmod>2024-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://maarman.github.io/traffic_flow.html</loc>
-    <lastmod>2024-01-18</lastmod>
+    <lastmod>2024-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://maarman.github.io/behavioral_economics.html</loc>
-    <lastmod>2024-01-19</lastmod>
+    <lastmod>2024-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
