@@ -161,15 +161,12 @@ Ali Arman Personal website, template based on TemplateMo
         }
 
         .menu-toggle span {
-    width: 25px;
-    height: 3px;
-    background: white;
-    margin-top: 20px;
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 3px;
-    transition: 1.5s;
-    border-radius: 2px;
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 3px 0;
+            transition: 1.5s;
+            border-radius: 2px;
         }
 
         /* Home Section with Coverflow */
@@ -320,14 +317,13 @@ Ali Arman Personal website, template based on TemplateMo
 
         /* Info display */
         .info {
-    position: absolute;
-    top: 150px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    text-align: center;
-    z-index: 200;
-    bottom: 50px;
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            text-align: center;
+            z-index: 200;
         }
 
         .info h2 {
@@ -338,9 +334,8 @@ Ali Arman Personal website, template based on TemplateMo
         }
 
         .info p {
-    font-size: 22px;
-    opacity: 0.7;
-    margin-bottom: 0px;
+            font-size: 22px;
+            opacity: 0.7;
         }
 
         @keyframes fadeIn {
@@ -981,6 +976,7 @@ Ali Arman Personal website, template based on TemplateMo
 			.coverflow {
 			  margin-top: 70px;
 			}
+
         }
 
         @media (max-width: 768px) {
@@ -1121,7 +1117,6 @@ Ali Arman Personal website, template based on TemplateMo
 			.coverflow {
 			  margin-top: 70px;
 			}
-
         }
 
         @media (max-width: 480px) {
@@ -1276,4 +1271,5 @@ Ali Arman Personal website, template based on TemplateMo
 			.coverflow {
 			  margin-top: 60px;
 			}
+
         }
