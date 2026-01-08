@@ -120,7 +120,6 @@ Data Fusion of Loop DetectorFloating Car Data and&nbsp;Data Fusion of Floating C
 		<p>&nbsp;</p>
 		<em><img src="../images/ld_fcd_df.png" width="692" height="554" alt=""/></em>
 		<p><em> The data fusion logic: Floating-car trajectories are corrected by anchoring them to lane-specific loop-detector detections within time-consistent search windows. </em></p>
-		<p>&nbsp;</p>
 	  </div>
 
       <div class="ldfcd-main">
@@ -155,8 +154,20 @@ Data Fusion of Loop DetectorFloating Car Data and&nbsp;Data Fusion of Floating C
       <div class="rdm-header">
         <h2>Lane-level Routable Digital Maps</h2>
 
-        <p> Text ...</p>
-      <img src="../images/df_1.png" width="892" height="608" alt=""/>      </div>
+        <p> A central requirement for all my data-fusion and trajectory-reconstruction work is the availability of a <strong>valid, lane-level routable digital map (RDM)</strong>. Without such a map, neither longitudinal alignment of sensors nor lateral consistency of vehicle trajectories can be guaranteed. This project was driven by the recognition that existing commercial or open maps are often misaligned, lane-incomplete, or incompatible with real traffic data, especially when the goal is to study lane-level operations and maneuvers. I therefore developed a method to reconstruct lane-level routable maps directly from observed vehicle behavior, ensuring that the resulting map is not only geometrically coherent but also fully consistent with the data streams used for traffic analysis and modeling.</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;From an industrial perspective, this work transforms low-precision, large-scale GPS trajectory data into a <strong>lane-accurate digital asset</strong> that supports advanced traffic analytics without reliance on costly mapping campaigns or proprietary HD maps. The resulting maps are routable, lane-consistent, and validated against traffic measurements, making them suitable for applications such as sensor alignment, corridor-level monitoring, lane-based performance analysis, and large-scale behavior modeling. Because the maps are derived from actual driving patterns, they remain robust in complex motorway environments such as merges, diverges, and weaving sections, where traditional density-based or manually curated maps often fail. This enables operators and mobility platforms to deploy lane-level intelligence across wide networks using data they already collect.</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;Beyond transportation, this method demonstrates how large-scale, noisy, and weakly structured location data can be transformed into high-fidelity digital representations through principled inference rather than direct measurement. The same concepts—network segmentation, statistically robust centerline extraction, density-aware clustering, and outlier detection- are applicable to domains such as logistics, telecommunications, urban analytics, and location-based services, where accurate network representations are essential, but ground truth is incomplete or costly to obtain. More broadly, the project illustrates how combining domain knowledge with statistical modeling enables reliable infrastructure intelligence to be derived from imperfect real-world data at scale.</p>
+        <p>&nbsp;</p>
+		<p>&nbsp;Methodologically, this project demonstrates advanced transport modeling and data-science expertise through a <strong>carefully structured three-step algorithm</strong>, each addressing a fundamental challenge in lane-level map construction from noisy trajectory data. First, I perform <strong>network segmentation</strong> by identifying trajectory bundles, <strong>detecting network nodes</strong>, and cutting the road into coherent segments. This step is critical for handling complex motorway layouts and ensures that downstream modeling operates on topologically meaningful units rather than raw point clouds. Second, I reconstruct a robust <strong>road centerline</strong> by computing trajectory dissimilarities, filtering outliers using statistical criteria, pairing consistent trajectories, and deriving a smoothed centerline that is resilient to sampling bias and asymmetric traffic usage. Third, I <strong>identify lanes</strong> through a statistically grounded pipeline: distances to the centerline are analyzed, outliers are removed using distribution-based tests and local outlier factors, the number of lanes is inferred using hypothesis testing and Gaussian Mixture Models, and lane boundaries are determined through iterative refinement until geometric consistency is achieved. This combination of network theory, statistical testing, clustering, and iterative validation reflects a high level of modeling maturity and shows how I translate raw mobility data into reliable, lane-level digital infrastructure that directly supports sensor alignment, data fusion, and advanced traffic behavior analysis (<strong><a href="https://doi.org/10.1016/j.procs.2020.03.086">The 11th International Conference on Ambient Systems, Networks and Technologies (ANT) - 2020</a></strong> and <strong><a href="https://doi.org/10.1016/j.trc.2021.103234">Transportation Research Part C - 2021</a></strong>).</p>
+		<p>&nbsp;</p>
+        <img src="../images/rdm_node_identification.png" width="747" height="591" alt=""/>
+		<p><em>(a) Trajectory bundles; (b) a node where two bundles of trajectories diverge; (c) a node where two bundles of trajectories merge</em></p>
+		<p>&nbsp;</p>
+		<img src="../images/rdm_lane_identification.png" width="923" height="448" alt=""/>
+		<p><em>Using distribution of trajectories around identified road centerline to detect outliers.&nbsp;Local Outlier Factor (LOF) is used to identify and remove anomalous trajectory points whose lateral distances to the road centerline are inconsistent with the local density of traffic observations.</em></p>
+      </div>
 
       <div class="rdm-main">
         <div class="rdm-visual">
@@ -165,7 +176,7 @@ Data Fusion of Loop DetectorFloating Car Data and&nbsp;Data Fusion of Floating C
               <div class="corner-decoration top-left"></div>
               <div class="corner-decoration bottom-right"></div>
 
-              <img src="images/my_photo.jpg" width="264" height="340" alt="Portrait photo" />
+              <img src="../images/rdm_flowchart.png" width="400" height="290" alt="Lane-Level Routable Digital Map Reconstruction Algorithm"  class="click-enlarge"/>
             </div>
           </div>
         </div>
@@ -174,12 +185,10 @@ Data Fusion of Loop DetectorFloating Car Data and&nbsp;Data Fusion of Floating C
           <h3>Uniqueness</h3>
 
           <ul class="feature-list">
-            <li>Text.</li>
-            <li>Text.</li>
-            <li>Text.</li>
-            <li>Text.</li>
-            <li>Text.</li>
-            <li>Text.</li>
+            <li>Enables lane-accurate sensor alignment and data fusion across large motorway networks using existing data streams.</li>
+            <li>Provides scalable, routable lane-level maps that support traffic operations, safety analysis, and advanced mobility applications.</li>
+            <li>Enables more reliable lane-level navigation and routing by deriving accurate, behavior-consistent road geometry from real-world movement data.</li>
+            <li>Avoids costly manual mapping by inferring lane geometry directly from observed driving behavior.</li>
           </ul>
         </div>
       </div>
