@@ -49,7 +49,7 @@ Ali Arman - Personal Website
                 description: "Modelling and pofiling risk of rare events"
             },
             {
-                title: "Traffic Flow Operation",
+                title: "Traffic Flow Operations",
                 description: "How traffic flow -motorised and non-mototorised- move and interact in transport network"
             },
             {
