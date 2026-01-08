@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ali Arman — About</title>
+  <link rel="stylesheet" href="data_fusion.css" />
+</head>
+
+<body>
+Data Fusion of Loop DetectorFloating Car Data and&nbsp;Data Fusion of Floating Car Data and&nbsp;Data Fusion of Floating Car Data and Loop Detector&nbsp;Data Fusion of Floating Car Data and Loop De&nbsp;Data Fusion of Floating Car Data and&nbsp;&nbsp;Data Fusion of Floating Car Data&nbsp;&nbsp;Data Fusion of Floating Car&nbsp;&nbsp;Data Fusion of&nbsp;&nbsp;Data Fusion&nbsp;Data Fusion Of&nbsp;Data Fusion OData Fusion&nbsp;  <!-- Header -->
+  <header class="header" id="header">
+    <a href="#about" class="logo-container">
+      <div class="logo">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="logo-text">Ali Arman — Personal Website&nbsp;— Data Fusion</div>
+    </a>
+
+    <nav class="main-menu" id="mainMenu">
+      <a href="../index.html" class="menu-item active">Home</a>
+    </nav>
+  </header>
+
+  <!-- Intro Section -->
+  <section id="intro" class="section">
+    <div class="intro-content">
+      <div class="intro-header">
+        <h2>Data Fusion</h2>
+
+        <p> Across science and engineering, innovation is increasingly driven by sophisticated and expensive data collection technologies. At the same time, vast amounts of already available data remain systematically underexploited. This is often justified by assumed limitations in accuracy, assumptions that are frequently made before the full potential of modern data fusion methods is explored.&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>Large-scale data streams are generated continuously in transportation systems. Loop detectors, probe vehicles, and other fixed roadside sensors operate daily, at scale, and at low marginal cost. My work in data science and traffic operations is motivated by a simple but powerful premise: <strong>the value of existing data can be fundamentally expanded through intelligent fusion, inference, and reconstruction methods</strong>.</p>
+        <p>&nbsp;</p>
+        <p>A central challenge in traffic analysis lies in the reconstruction of <strong>vehicle trajectories</strong>, particularly when both <strong>longitudinal motion</strong> and <strong>lateral (lane-changing) behavior</strong> are of interest. While longitudinal dynamics have been studied extensively, lane-changing maneuvers remain comparatively underexplored. The primary reason is data availability: lane-accurate trajectories are typically obtained through video-based systems, which are expensive, spatially limited, and temporally short-lived. Well-known datasets such as <a href="https://data.transportation.gov/stories/s/Next-Generation-Simulation-NGSIM-Open-Data/i5zb-xe34/"><strong>NGSIM</strong></a> and <a href="https://levelxdata.com/highd-dataset/"><strong>HighD</strong></a> are highly limited in coverage; they provide valuable insights, but at substantial financial and operational cost. Large-scale initiatives like <a href="https://i24motion.org/"><strong>I-24 Motion</strong></a> and <a href="https://zenodo.org/records/14012006"><strong>DLR-HT</strong></a> provide several hours and kilometers of coverage, but they are even more costly.&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;In contrast, conventional traffic sensors, especially inductive loop detectors, are deployed ubiquitously and operate continuously. These data sources are traditionally considered insufficient for lane-level trajectory analysis. My data fusion projects demonstrate that this limitation is not inherent to the data itself, but rather to how it is processed. The <em>animation below</em> compares a short list of widely known trajectory datasets with the resulting dataset from my project, <strong>TAILOR</strong>, highlighting differences in spatial coverage and temporal extent.&nbsp;Beyond these well-known examples, <a href="https://www.researchsquare.com/article/rs-7497430/v1"><strong>a recent multi-institutional literature mining study</strong></a> (which I contributed to) systematically reviewed and categorized 100+ vehicle trajectory datasets and data collection initiatives.</p>
+		<p>&nbsp;</p>
+		<img src="../images/TAILOR_vs_others_HQ.gif" width="960" height="540" alt=""/>
+		<p>&nbsp;</p>
+		<p>I introduced <strong>two data fusion and large-scale data mining methods</strong> that enable the approximation of vehicle trajectories, including lane-changing maneuvers, using conventional roadside sensor data at <strong>near-zero additional cost</strong>. These methods leverage individual vehicle cross-sectional observations and reconstruct continuous trajectories over extended spatial and temporal horizons.&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>The resulting dataset and framework, <strong>TAILOR</strong>, represents a shift from active, infrastructure-heavy data collection toward a <strong>passive, scalable, and cost-effective trajectory reconstruction paradigm</strong>. As long as individual vehicle detections are available, the approach supports sustained trajectory reconstruction over corridors, networks, and time periods defined by project needs rather than by data collection constraints.</p>
+		<p>&nbsp;</p>
+		<p>TAILOR enables lane-level behavioral analysis at a scale that was previously impractical, opening new possibilities for traffic safety analysis, operational modeling, and data-driven decision support, without reliance on costly and temporary sensing campaigns.</p>
+	  </div>
+
+    </div>
+  </section>
+
+<!-- TFC Section -->
+  <section id="tfc" class="section">
+    <div class="tfc-content">
+      <div class="tfc-header">
+        <h2>Traffic Flow Crystallization (TFC)</h2>
+
+        <p> I developed a data-fusion methodology that turns conventional loop-detector individual vehicle data (IVD) into lane-level trajectory approximations, including inference of lane-changing maneuvers. The motivation is practical: loop detectors permanently monitor most motorways and produce years of data, but those logs are typically treated as “cross-section only” and therefore discarded for lane-change and behavior studies. This work shows that, under realistic detector spacing (on the order of hundreds of meters), that assumption is unnecessarily conservative.</p>
+        <p>&nbsp;</p>
+        <p> At the core is a probabilistic vehicle re-identification (ReID) engine that matches the same vehicle across successive, lane-specific detector stations by combining three complementary similarity cues, vehicle length, passage time, and passage speed, within a Bayesian likelihood formulation. The method proceeds in two stages: it first locks in extremely reliable lane-keeping matches, then uses those matches as dynamic boundary conditions to recursively resolve the harder cases, including lane changes. This “growth” mechanism is what I refer to as Traffic Flow Crystallization.</p>
+        <p>&nbsp;</p>
+        <p> The pipeline produces (I) reconstructed trajectories at a fine temporal resolution and (II) inferred lane changes with an estimated location between detector stations. I validated the method with CCTV-based ground truth for re-identification and lane-change counts, and with centimeter-accurate differential GPS probe trajectories to quantify longitudinal trajectory error and the uncertainty bounds of inferred lane-change locations. In the reported case study, the method achieves &gt;96% vehicle re-identification success (and higher in non-congested conditions) and yields lane-change counts with only a small underestimation relative to ground truth (<strong><a href="https://trid.trb.org/view/2117815">Transportation Research Board 2023</a></strong>&nbsp;&amp; <strong><a href="https://ieeexplore.ieee.org/document/11034669">IEEE Transactions on Intelligent Transportation Systems</a></strong>).&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>This contribution is not “another dataset,” but a scalable way to convert existing infrastructure into trajectory-like information, enabling lane-change analytics and behavior studies over long corridors and long time periods without relying on expensive camera deployments.</p>
+		<p>&nbsp;</p>
+		<img src="../images/tfc.png" width="1045" height="371" alt=""/>
+		<p>&nbsp;</p>
+		<p>&nbsp;As a methodological by-product of the TFC, I developed a segment travel time estimation method based on individual vehicle data from loop detectors. The method enables accurate estimation of lane-based segment travel times between detector stations. The method achieves high accuracy in both uncongested and congested conditions (<strong><a href="https://ieeexplore.ieee.org/abstract/document/10421955">2023 IEEE 26th ITSC</a></strong>).</p>
+		<p>&nbsp;</p>
+</div>
+
+      <div class="tfc-main">
+        <div class="tfc-visual">
+          <div class="showcase-display">
+            <div class="showcase-main"><img src="../images/ReID.png" width="663" height="471" alt=""/>
+              <div class="corner-decoration top-left"></div>
+              <div class="corner-decoration bottom-right"></div>
+</div>
+          </div>
+        </div>
+
+        <div class="tfc-info">
+          <h3>Highlights</h3>
+
+          <ul class="feature-list">
+            <li>Reconstruction of continuous trajectories of the entire traffic flow operation for free and congestion regimes.</li>
+            <li>Detailed full-traffic reconstruction at any time, any location, using only loop detector data.</li>
+            <li>A highly flexible vehicle re-identification framework based on Bayesian maximum likelihood estimator that can be fed by any sensor data.</li>
+            <li>Applicable in the analysis of traffic flow, C-ITS strategies, profiling risk in motorways, and calibration of microsimulators.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- ldfcd Section -->
+  <section id="ldfcd" class="section">
+    <div class="ldfcd-content">
+      <div class="ldfcd-header">
+        <h2>Data Fusion of Loop Detector and Floating Car Data</h2>
+
+        <p> Text ...</p>
+		<p> Text ...</p>
+		<p> Text ...</p>
+		<p>&nbsp;</p>
+      	<img src="../images/df_1.png" width="892" height="608" alt=""/>      
+	  
+	  </div>
+
+      <div class="ldfcd-main">
+        <div class="ldfcd-visual">
+          <div class="ldfcd-showcase-display">
+            <div class="ldfcd-showcase-main">
+              <div class="ldfcd-corner-decoration top-left"></div>
+              <div class="ldfcd-corner-decoration bottom-right"></div>
+
+              <img src="images/my_photo.jpg" width="264" height="340" alt="Portrait photo" />
+            </div>
+          </div>
+        </div>
+
+        <div class="ldfcd-info">
+          <h3>Uniqueness</h3>
+
+          <ul class="feature-list">
+            <li>Text.</li>
+            <li>Text.</li>
+            <li>Text.</li>
+            <li>Text.</li>
+            <li>Text.</li>
+            <li>Text.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+	
+	
+	
+	
+  <!-- Scroll to top button -->
+  <button class="scroll-to-top" id="scrollToTop" type="button" aria-label="Scroll to top">
+    ↑
+  </button>
+
+  <script src="data_fusion-scripts.js"></script>
+</body>
+</html>
+
+
+
+

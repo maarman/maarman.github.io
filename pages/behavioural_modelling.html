@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ali Arman — About</title>
+  <link rel="stylesheet" href="data_fusion.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <a href="#about" class="logo-container">
+      <div class="logo">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="logo-text">Ali Arman — Personal Website&nbsp;— Data Fusion</div>
+    </a>
+
+    <nav class="main-menu" id="mainMenu">
+      <a href="../index.html" class="menu-item active">Home</a>
+    </nav>
+  </header>
+
+  <!-- Intro Section -->
+  <section id="intro" class="section">
+    <div class="intro-content">
+      <div class="intro-header">
+        <h2>Data Fusion</h2>
+
+        <p> Across science and engineering, innovation is increasingly driven by sophisticated and expensive data collection technologies. At the same time, vast amounts of already available data remain systematically underexploited. This is often justified by assumed limitations in accuracy, assumptions that are frequently made before the full potential of modern data fusion methods is explored.&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>Large-scale data streams are generated continuously in transportation systems. Loop detectors, probe vehicles, and other fixed roadside sensors operate daily, at scale, and at low marginal cost. My work in data science and traffic operations is motivated by a simple but powerful premise: <strong>the value of existing data can be fundamentally expanded through intelligent fusion, inference, and reconstruction methods</strong>.</p>
+        <p>&nbsp;</p>
+        <p>A central challenge in traffic analysis lies in the reconstruction of <strong>vehicle trajectories</strong>, particularly when both <strong>longitudinal motion</strong> and <strong>lateral (lane-changing) behavior</strong> are of interest. While longitudinal dynamics have been studied extensively, lane-changing maneuvers remain comparatively underexplored. The primary reason is data availability: lane-accurate trajectories are typically obtained through video-based systems, which are expensive, spatially limited, and temporally short-lived. Well-known datasets such as <a href="https://data.transportation.gov/stories/s/Next-Generation-Simulation-NGSIM-Open-Data/i5zb-xe34/"><strong>NGSIM</strong></a> and <a href="https://levelxdata.com/highd-dataset/"><strong>HighD</strong></a> are highly limited in coverage; they provide valuable insights, but at substantial financial and operational cost. Large-scale initiatives like <a href="https://i24motion.org/"><strong>I-24 Motion</strong></a> and <a href="https://zenodo.org/records/14012006"><strong>DLR-HT</strong></a> provide several hours and kilometers of coverage, but they are even more costly.&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;In contrast, conventional traffic sensors, especially inductive loop detectors, are deployed ubiquitously and operate continuously. These data sources are traditionally considered insufficient for lane-level trajectory analysis. My data fusion projects demonstrate that this limitation is not inherent to the data itself, but rather to how it is processed. The <em>animation below</em> compares a short list of widely known trajectory datasets with the resulting dataset from my project, <strong>TAILOR</strong>, highlighting differences in spatial coverage and temporal extent.&nbsp;Beyond these well-known examples, <a href="https://www.researchsquare.com/article/rs-7497430/v1"><strong>a recent multi-institutional literature mining study</strong></a> (which I contributed to) systematically reviewed and categorized 100+ vehicle trajectory datasets and data collection initiatives.</p>
+		<p>&nbsp;</p>
+		<img src="../images/TAILOR_vs_others_HQ.gif" width="960" height="540" alt=""/>
+		<p>&nbsp;</p>
+		<p>I introduced <strong>two data fusion and large-scale data mining methods</strong> that enable the approximation of vehicle trajectories, including lane-changing maneuvers, using conventional roadside sensor data at <strong>near-zero additional cost</strong>. These methods leverage individual vehicle cross-sectional observations and reconstruct continuous trajectories over extended spatial and temporal horizons.&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>The resulting dataset and framework, <strong>TAILOR</strong>, represents a shift from active, infrastructure-heavy data collection toward a <strong>passive, scalable, and cost-effective trajectory reconstruction paradigm</strong>. As long as individual vehicle detections are available, the approach supports sustained trajectory reconstruction over corridors, networks, and time periods defined by project needs rather than by data collection constraints.</p>
+		<p>&nbsp;</p>
+		<p>TAILOR enables lane-level behavioral analysis at a scale that was previously impractical, opening new possibilities for traffic safety analysis, operational modeling, and data-driven decision support, without reliance on costly and temporary sensing campaigns.</p>
+	  </div>
+
+    </div>
+  </section>
+
+<!-- TFC Section -->
+  <section id="tfc" class="section">
+    <div class="tfc-content">
+      <div class="tfc-header">
+        <h2>Traffic Flow Crystallization (TFC)</h2>
+
+        <p> Text ...</p>
+		<p> Text ...</p>
+		<p> Text ...</p>
+      <img src="../images/tfc.png" width="1045" height="371" alt=""/>      </div>
+
+      <div class="tfc-main">
+        <div class="tfc-visual">
+          <div class="showcase-display">
+            <div class="showcase-main">
+              <div class="corner-decoration top-left"></div>
+              <div class="corner-decoration bottom-right"></div>
+
+              <img src="images/my_photo.jpg" width="264" height="340" alt="Portrait photo" />
+            </div>
+          </div>
+        </div>
+
+        <div class="tfc-info">
+          <h3>Uniqueness</h3>
+
+          <ul class="feature-list">
+            <li>Text.</li>
+            <li>Text.</li>
+            <li>Text.</li>
+            <li>Text.</li>
+            <li>Text.</li>
+            <li>Text.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+	
+	
+  <!-- Scroll to top button -->
+  <button class="scroll-to-top" id="scrollToTop" type="button" aria-label="Scroll to top">
+    ↑
+  </button>
+
+  <script src="data_fusion-scripts.js"></script>
+</body>
+</html>
