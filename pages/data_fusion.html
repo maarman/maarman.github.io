@@ -65,13 +65,14 @@ Data Fusion of Loop DetectorFloating Car Data and&nbsp;Data Fusion of Floating C
         <p>&nbsp;</p>
         <p> At the core is a probabilistic vehicle re-identification (ReID) engine that matches the same vehicle across successive, lane-specific detector stations by combining three complementary similarity cues, vehicle length, passage time, and passage speed, within a Bayesian likelihood formulation. The method proceeds in two stages: it first locks in extremely reliable lane-keeping matches, then uses those matches as dynamic boundary conditions to recursively resolve the harder cases, including lane changes. This “growth” mechanism is what I refer to as Traffic Flow Crystallization.</p>
         <p>&nbsp;</p>
-        <p> The pipeline produces (I) reconstructed trajectories at a fine temporal resolution and (II) inferred lane changes with an estimated location between detector stations. I validated the method with CCTV-based ground truth for re-identification and lane-change counts, and with centimeter-accurate differential GPS probe trajectories to quantify longitudinal trajectory error and the uncertainty bounds of inferred lane-change locations. In the reported case study, the method achieves &gt;96% vehicle re-identification success (and higher in non-congested conditions) and yields lane-change counts with only a small underestimation relative to ground truth (<strong><a href="https://trid.trb.org/view/2117815">Transportation Research Board 2023</a></strong>&nbsp;&amp; <strong><a href="https://ieeexplore.ieee.org/document/11034669">IEEE Transactions on Intelligent Transportation Systems</a></strong>).&nbsp;</p>
+        <p> The pipeline produces (I) reconstructed trajectories at a fine temporal resolution and (II) inferred lane changes with an estimated location between detector stations. I validated the method with CCTV-based ground truth for re-identification and lane-change counts, and with centimeter-accurate differential GPS probe trajectories to quantify longitudinal trajectory error and the uncertainty bounds of inferred lane-change locations. In the reported case study, the method achieves &gt;96% vehicle re-identification success (and higher in non-congested conditions) and yields lane-change counts with only a small underestimation relative to ground truth (<strong><a href="https://trid.trb.org/view/2117815">Transportation Research Board - 2023</a></strong>&nbsp;&amp; <strong><a href="https://ieeexplore.ieee.org/document/11034669">IEEE Transactions on Intelligent Transportation Systems - 2025</a></strong>).&nbsp;</p>
         <p>&nbsp;</p>
         <p>This contribution is not “another dataset,” but a scalable way to convert existing infrastructure into trajectory-like information, enabling lane-change analytics and behavior studies over long corridors and long time periods without relying on expensive camera deployments.</p>
 		<p>&nbsp;</p>
 		<img src="../images/tfc.png" width="1045" height="371" alt=""/>
+		<p><em>A sample of resulting trajectories: 5 minutes and 400 meters, including lane changes.</em></p>
 		<p>&nbsp;</p>
-		<p>&nbsp;As a methodological by-product of the TFC, I developed a segment travel time estimation method based on individual vehicle data from loop detectors. The method enables accurate estimation of lane-based segment travel times between detector stations. The method achieves high accuracy in both uncongested and congested conditions (<strong><a href="https://ieeexplore.ieee.org/abstract/document/10421955">2023 IEEE 26th ITSC</a></strong>).</p>
+<p>&nbsp;As a methodological by-product of the TFC, I developed a segment travel time estimation method based on individual vehicle data from loop detectors. The method enables accurate estimation of lane-based segment travel times between detector stations. The method achieves high accuracy in both uncongested and congested conditions (<strong><a href="https://ieeexplore.ieee.org/abstract/document/10421955">IEEE 26th ITSC- 2023</a></strong>).</p>
 		<p>&nbsp;</p>
 </div>
 
@@ -105,13 +106,21 @@ Data Fusion of Loop DetectorFloating Car Data and&nbsp;Data Fusion of Floating C
     <div class="ldfcd-content">
       <div class="ldfcd-header">
         <h2>Data Fusion of Loop Detector and Floating Car Data</h2>
-
-        <p> Text ...</p>
-		<p> Text ...</p>
-		<p> Text ...</p>
+        <h3><strong>&nbsp;Large-Scale Trajectory Reconstruction from Conventional Traffic Sensors&nbsp;</strong></h3>
+        <h3>Part of&nbsp; <a href="https://trimis.ec.europa.eu/project/concorda">CEF-project CONCORDA</a>&nbsp;</h3>
 		<p>&nbsp;</p>
-      	<img src="../images/df_1.png" width="892" height="608" alt=""/>      
-	  
+		<p>This work is an earlier attempt compared to <strong>TFC</strong> to address a fundamental limitation in traffic operations and safety analysis: the lack of longitudinally continuous vehicle trajectories over extended motorway corridors. In this project, I tackled a practical limitation of <strong>floating-car data (FCD)</strong>: while smartphone-based trajectories are scalable and inexpensive, their lateral accuracy is typically insufficient for <strong>lane-level analysis</strong>. This matters because many high-impact questions, lane choice, lane changes, weaving dynamics, turbulence, and safety- critical interactions, require knowing <strong>which lane a vehicle occupies over time</strong>, not just its route. My goal here was to convert widely available smartphone trajectories into <strong>lane-identifiable trajectories</strong> suitable for microscopic traffic studies, without relying on expensive camera-based trajectory collection.</p>
+		<p>&nbsp;</p>
+		<strong><img src="../images/origina-lateral-bias.png" width="891" height="550" alt=""/></strong>
+		<p><em> The green line represents the trajectory of a probe vehicle collected using a centimeter-accuracy d-GPS; the other lines represent the same probe vehicle's trajectories collected simultaneously by several smartphones in that car. </em></p>
+		<p>&nbsp;</p>
+		<p> In this project, I demonstrated how large-scale, low-cost traffic data streams can be upgraded into <strong>lane-level, behavior-aware trajectories</strong> suitable for operational decision-making. The contribution is not incremental accuracy improvement, but <strong>capability transformation</strong>: converting ubiquitous but noisy floating-car data into lane-resolved trajectories that unlock analyses previously restricted to expensive, short-term camera deployments. This enables continuous monitoring of complex motorway segments, such as weaving areas and bottlenecks, where lane usage, lateral maneuvers, and interactions directly drive congestion, capacity loss, and safety risk. The outcome is a scalable, infrastructure-agnostic solution that bridges the gap between strategic network monitoring and microscopic traffic behavior analysis, using data sources that already exist in most operational ecosystems.</p>
+		<p>&nbsp;</p>
+		<p> Methodologically, this work reflects advanced transport modeling and data-science expertise by framing lane-level trajectory reconstruction as <strong>a constrained data-fusion and inference problem</strong>, rather than a localization or map-matching task. I designed a pipeline that systematically exploits the complementary strengths of heterogeneous data: continuous but laterally uncertain trajectories are anchored using lane-specific cross-sectional observations, and their lateral bias is corrected through a physically consistent reconstruction process. The approach required careful modeling of measurement uncertainty, vehicle-level consistency, spatiotemporal alignment, and traffic flow structure, while remaining computationally efficient and transferable. The resulting framework does not rely on ad-hoc heuristics; it embeds traffic flow logic, probabilistic matching, and consistency constraints into a deployable algorithm with minimal calibration effort. This combination of <strong>theory-driven modeling, statistical reasoning, and large-scale data engineering</strong> is what allows the method to perform robustly across traffic regimes and network configurations, and it exemplifies how I approach complex mobility and data science problems: extracting high-resolution behavioral insight from imperfect, real-world data at scale (<strong><a href="https://doi.org/10.1016/j.trc.2022.103906">Transportation Research Part C - 2022</a></strong>).</p>
+		<p>&nbsp;</p>
+		<em><img src="../images/ld_fcd_df.png" width="692" height="554" alt=""/></em>
+		<p><em> The data fusion logic: Floating-car trajectories are corrected by anchoring them to lane-specific loop-detector detections within time-consistent search windows. </em></p>
+		<p>&nbsp;</p>
 	  </div>
 
       <div class="ldfcd-main">
@@ -121,7 +130,7 @@ Data Fusion of Loop DetectorFloating Car Data and&nbsp;Data Fusion of Floating C
               <div class="ldfcd-corner-decoration top-left"></div>
               <div class="ldfcd-corner-decoration bottom-right"></div>
 
-              <img src="images/my_photo.jpg" width="264" height="340" alt="Portrait photo" />
+              <img src="../images/ld_fcd_df_results.jpg" width="599" height="288" alt="Portrait photo" />
             </div>
           </div>
         </div>
@@ -130,12 +139,10 @@ Data Fusion of Loop DetectorFloating Car Data and&nbsp;Data Fusion of Floating C
           <h3>Uniqueness</h3>
 
           <ul class="feature-list">
-            <li>Text.</li>
-            <li>Text.</li>
-            <li>Text.</li>
-            <li>Text.</li>
-            <li>Text.</li>
-            <li>Text.</li>
+            <li>Upgrading widely available floating-car data into lane-accurate trajectories enables high-resolution analysis of traffic operations and driving behavior at scale.</li>
+            <li>Plug-and-play methodology that integrates seamlessly with existing detector infrastructure and traffic-management systems.</li>
+            <li>Eliminates dependence on costly, short-term camera deployments while preserving microscopic behavioral insight.</li>
+            <li>Scales naturally across corridors and time, supporting continuous monitoring, modeling, and data-driven decision support.</li>
           </ul>
         </div>
       </div>

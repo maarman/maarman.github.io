@@ -972,6 +972,15 @@ Ali Arman Personal website, template based on TemplateMo
             .contact-form-section {
                 padding-left: 0;
             }
+			
+			.coverflow-wrapper {
+			  align-items: flex-start;
+			  padding-top: 170px;
+			}
+
+			.coverflow {
+			  margin-top: 70px;
+			}
         }
 
         @media (max-width: 768px) {
