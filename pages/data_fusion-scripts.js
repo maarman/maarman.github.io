@@ -1,6 +1,8 @@
 // About page script (minimal)
 // - Header "scrolled" state
 // - Scroll-to-top visibility + click behavior
+// - Click-to-enlarge for selected figures (.click-enlarge)
+
 
 (() => {
   const header = document.getElementById('header');
