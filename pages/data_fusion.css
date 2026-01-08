@@ -850,3 +850,30 @@ body {
   border-top: none;
   border-radius: 0 0 20px 0;
 }
+
+/* Click-to-enlarge specific figures */
+.click-enlarge {
+  cursor: zoom-in;
+}
+
+/* Overlay */
+.image-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.image-overlay img {
+  max-width: none;
+  width: auto;
+  height: auto;
+  max-height: 96vh;
+  object-fit: contain;
+
+  /* for mobile */
+  touch-action: pinch-zoom;
+}
