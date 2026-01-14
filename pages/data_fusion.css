@@ -367,7 +367,7 @@ body {
     text-align: center;
     margin-bottom: 0px;
     padding-top: 40px; /* space under fixed header */
-    margin-top: 20px;
+    margin-top: -30px;
 }
 
 .tfc-header h2 {
@@ -394,9 +394,10 @@ body {
 .tfc-main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 0px;
     align-items: center;
-    margin-bottom: 30px;
+	margin-top: -60px;
+    margin-bottom: -50px;
 }
 
 .tfc-visual {
@@ -424,7 +425,7 @@ body {
     gap: 60px;
   }
 
-  .tfc-visual { height: 400px; }
+  .tfc-visual { height: 320px; }
 
   .tfc-info {
     padding-left: 0;
@@ -485,7 +486,7 @@ body {
 .ldfcd-header {
     text-align: center;
     padding-top: 40px; /* space under fixed header */
-    margin-top: 20px;
+    margin-top: -50px;
 }
 
 .ldfcd-header h2 {
@@ -512,9 +513,10 @@ body {
 .ldfcd-main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 0px;
   align-items: center;
-  margin-bottom: 80px;
+  margin-top: -60px;
+  margin-bottom: -90px;
 }
 
 .ldfcd-visual {
@@ -676,14 +678,14 @@ body {
 .rdm-header {
     text-align: center;
     margin-bottom: 80px;
-    padding-top: 60px; /* space under fixed header */
-    margin-top: 60px;
+    padding-top: 40px; /* space under fixed header */
+    margin-top: -40px;
 }
 
 .rdm-header h2 {
     font-size: 48px;
     margin-bottom: 20px;
-    margin-above: 60px;
+    margin-top: 60px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -704,9 +706,10 @@ body {
 .rdm-main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 0px;
   align-items: center;
-  margin-bottom: 80px;
+  margin-top: -100px;
+  margin-bottom: 0px;
 }
 
 .rdm-visual {
