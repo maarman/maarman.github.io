@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ali Arman — About</title>
+  <title>Ali Arman — Data Fusion</title>
   <link rel="stylesheet" href="data_fusion.css" />
 </head>
 
 <body>
-Data Fusion of Loop DetectorFloating Car Data and&nbsp;Data Fusion of Floating Car Data and&nbsp;Data Fusion of Floating Car Data and Loop Detector&nbsp;Data Fusion of Floating Car Data and Loop De&nbsp;Data Fusion of Floating Car Data and&nbsp;&nbsp;Data Fusion of Floating Car Data&nbsp;&nbsp;Data Fusion of Floating Car&nbsp;&nbsp;Data Fusion of&nbsp;&nbsp;Data Fusion&nbsp;Data Fusion Of&nbsp;Data Fusion OData Fusion&nbsp;  <!-- Header -->
+<!-- Header -->
   <header class="header" id="header">
     <a href="#about" class="logo-container">
       <div class="logo">
@@ -43,7 +43,7 @@ Data Fusion of Loop DetectorFloating Car Data and&nbsp;Data Fusion of Floating C
         <p>&nbsp;</p>
         <p>&nbsp;In contrast, conventional traffic sensors, especially inductive loop detectors, are deployed ubiquitously and operate continuously. These data sources are traditionally considered insufficient for lane-level trajectory analysis. My data fusion projects demonstrate that this limitation is not inherent to the data itself, but rather to how it is processed. The <em>animation below</em> compares a short list of widely known trajectory datasets with the resulting dataset from my project, <strong>TAILOR</strong>, highlighting differences in spatial coverage and temporal extent.&nbsp;Beyond these well-known examples, <a href="https://www.researchsquare.com/article/rs-7497430/v1"><strong>a recent multi-institutional literature mining study</strong></a> (which I contributed to) systematically reviewed and categorized 100+ vehicle trajectory datasets and data collection initiatives.</p>
 		<p>&nbsp;</p>
-		<img src="../images/TAILOR_vs_others_HQ.gif" width="960" height="540" alt=""/>
+		<img src="../images/TAILOR_vs_others_HQ.gif" width="960" height="540" alt="" class="responsive-figure"/>
 		<p>&nbsp;</p>
 		<p>I introduced <strong>two data fusion and large-scale data mining methods</strong> that enable the approximation of vehicle trajectories, including lane-changing maneuvers, using conventional roadside sensor data at <strong>near-zero additional cost</strong>. These methods leverage individual vehicle cross-sectional observations and reconstruct continuous trajectories over extended spatial and temporal horizons.&nbsp;</p>
 		<p>&nbsp;</p>
@@ -69,7 +69,7 @@ Data Fusion of Loop DetectorFloating Car Data and&nbsp;Data Fusion of Floating C
         <p>&nbsp;</p>
         <p>This contribution is not “another dataset,” but a scalable way to convert existing infrastructure into trajectory-like information, enabling lane-change analytics and behavior studies over long corridors and long time periods without relying on expensive camera deployments.</p>
 		<p>&nbsp;</p>
-		<img src="../images/tfc.png" width="1045" height="371" alt=""/>
+		<img src="../images/tfc.png" width="1045" height="371" alt="" class="responsive-figure"/>
 		<p><em>A sample of resulting trajectories: 5 minutes and 400 meters, including lane changes.</em></p>
 		<p>&nbsp;</p>
 		<p>&nbsp;As a methodological by-product of the TFC, I developed a segment travel time estimation method based on individual vehicle data from loop detectors. The method enables accurate estimation of lane-based segment travel times between detector stations. The method achieves high accuracy in both uncongested and congested conditions (<strong><a href="https://ieeexplore.ieee.org/abstract/document/10421955">IEEE 26th ITSC- 2023</a></strong>).</p>
@@ -110,14 +110,14 @@ Data Fusion of Loop DetectorFloating Car Data and&nbsp;Data Fusion of Floating C
 		<p>&nbsp;</p>
 		<p>This work is an earlier attempt compared to <strong>TFC</strong> to address a fundamental limitation in traffic operations and safety analysis: the lack of longitudinally continuous vehicle trajectories over extended motorway corridors. In this project, I tackled a practical limitation of <strong>floating-car data (FCD)</strong>: while smartphone-based trajectories are scalable and inexpensive, their lateral accuracy is typically insufficient for <strong>lane-level analysis</strong>. This matters because many high-impact questions, lane choice, lane changes, weaving dynamics, turbulence, and safety- critical interactions, require knowing <strong>which lane a vehicle occupies over time</strong>, not just its route. My goal here was to convert widely available smartphone trajectories into <strong>lane-identifiable trajectories</strong> suitable for microscopic traffic studies, without relying on expensive camera-based trajectory collection.</p>
 		<p>&nbsp;</p>
-		<strong><img src="../images/origina-lateral-bias.png" width="891" height="550" alt=""/></strong>
+		<strong><img src="../images/origina-lateral-bias.png" width="891" height="550" alt="" class="responsive-figure"/></strong>
 		<p><em> The green line represents the trajectory of a probe vehicle collected using a centimeter-accuracy d-GPS; the other lines represent the same probe vehicle's trajectories collected simultaneously by several smartphones in that car. </em></p>
 		<p>&nbsp;</p>
 		<p> In this project, I demonstrated how large-scale, low-cost traffic data streams can be upgraded into <strong>lane-level, behavior-aware trajectories</strong> suitable for operational decision-making. The contribution is not incremental accuracy improvement, but <strong>capability transformation</strong>: converting ubiquitous but noisy floating-car data into lane-resolved trajectories that unlock analyses previously restricted to expensive, short-term camera deployments. This enables continuous monitoring of complex motorway segments, such as weaving areas and bottlenecks, where lane usage, lateral maneuvers, and interactions directly drive congestion, capacity loss, and safety risk. The outcome is a scalable, infrastructure-agnostic solution that bridges the gap between strategic network monitoring and microscopic traffic behavior analysis, using data sources that already exist in most operational ecosystems.</p>
 		<p>&nbsp;</p>
 		<p> Methodologically, this work reflects advanced transport modeling and data-science expertise by framing lane-level trajectory reconstruction as <strong>a constrained data-fusion and inference problem</strong>, rather than a localization or map-matching task. I designed a pipeline that systematically exploits the complementary strengths of heterogeneous data: continuous but laterally uncertain trajectories are anchored using lane-specific cross-sectional observations, and their lateral bias is corrected through a physically consistent reconstruction process. The approach required careful modeling of measurement uncertainty, vehicle-level consistency, spatiotemporal alignment, and traffic flow structure, while remaining computationally efficient and transferable. The resulting framework does not rely on ad-hoc heuristics; it embeds traffic flow logic, probabilistic matching, and consistency constraints into a deployable algorithm with minimal calibration effort. This combination of <strong>theory-driven modeling, statistical reasoning, and large-scale data engineering</strong> is what allows the method to perform robustly across traffic regimes and network configurations, and it exemplifies how I approach complex mobility and data science problems: extracting high-resolution behavioral insight from imperfect, real-world data at scale (<strong><a href="https://doi.org/10.1016/j.trc.2022.103906">Transportation Research Part C - 2022</a></strong>).</p>
 		<p>&nbsp;</p>
-		<em><img src="../images/ld_fcd_df.png" width="692" height="554" alt=""/></em>
+		<em><img src="../images/ld_fcd_df.png" width="692" height="554" alt="" class="responsive-figure"/></em>
 		<p><em> The data fusion logic: Floating-car trajectories are corrected by anchoring them to lane-specific loop-detector detections within time-consistent search windows. </em></p>
 	  </div>
 
@@ -161,10 +161,10 @@ Data Fusion of Loop DetectorFloating Car Data and&nbsp;Data Fusion of Floating C
         <p>&nbsp;</p>
 		<p>&nbsp;Methodologically, this project demonstrates advanced transport modeling and data-science expertise through a <strong>carefully structured three-step algorithm</strong>, each addressing a fundamental challenge in lane-level map construction from noisy trajectory data. First, I perform <strong>network segmentation</strong> by identifying trajectory bundles, <strong>detecting network nodes</strong>, and cutting the road into coherent segments. This step is critical for handling complex motorway layouts and ensures that downstream modeling operates on topologically meaningful units rather than raw point clouds. Second, I reconstruct a robust <strong>road centerline</strong> by computing trajectory dissimilarities, filtering outliers using statistical criteria, pairing consistent trajectories, and deriving a smoothed centerline that is resilient to sampling bias and asymmetric traffic usage. Third, I <strong>identify lanes</strong> through a statistically grounded pipeline: distances to the centerline are analyzed, outliers are removed using distribution-based tests and local outlier factors, the number of lanes is inferred using hypothesis testing and Gaussian Mixture Models, and lane boundaries are determined through iterative refinement until geometric consistency is achieved. This combination of network theory, statistical testing, clustering, and iterative validation reflects a high level of modeling maturity and shows how I translate raw mobility data into reliable, lane-level digital infrastructure that directly supports sensor alignment, data fusion, and advanced traffic behavior analysis (<strong><a href="https://doi.org/10.1016/j.procs.2020.03.086">The 11th International Conference on Ambient Systems, Networks and Technologies (ANT) - 2020</a></strong> and <strong><a href="https://doi.org/10.1016/j.trc.2021.103234">Transportation Research Part C - 2021</a></strong>).</p>
 		<p>&nbsp;</p>
-        <img src="../images/rdm_node_identification.png" width="747" height="591" alt=""/>
+        <img src="../images/rdm_node_identification.png" width="747" height="591" alt="" class="responsive-figure"/>
 		<p><em>(a) Trajectory bundles; (b) a node where two bundles of trajectories diverge; (c) a node where two bundles of trajectories merge</em></p>
 		<p>&nbsp;</p>
-		<img src="../images/rdm_lane_identification.png" width="923" height="448" alt=""/>
+		<img src="../images/rdm_lane_identification.png" width="923" height="448" alt="" class="responsive-figure"/>
 		<p><em>Using distribution of trajectories around identified road centerline to detect outliers.&nbsp;Local Outlier Factor (LOF) is used to identify and remove anomalous trajectory points whose lateral distances to the road centerline are inconsistent with the local density of traffic observations.</em></p>
 		<p>&nbsp;</p>
 		<p>A sample of the reconstructed RDM for a test network around Antwerp, Belgium, is available at <a href="../asset/rdm_lanes_over_google_earth_red.html"><strong>link</strong></a>.&nbsp;</p>
