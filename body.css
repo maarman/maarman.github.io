@@ -198,7 +198,7 @@ Ali Arman Personal website, template based on TemplateMo
             transform-style: preserve-3d;
             position: relative;
             width: 100%;
-            height: 400px;
+            height: 420px;
         }
 
         .coverflow-item {
@@ -323,7 +323,7 @@ Ali Arman Personal website, template based on TemplateMo
             transform: translateX(-50%);
             color: white;
             text-align: center;
-            z-index: 200;
+            z-index: 250;
         }
 
         .info h2 {
@@ -1273,3 +1273,24 @@ Ali Arman Personal website, template based on TemplateMo
 			}
 
         }
+
+@media (max-height: 1040px) {
+    .coverflow-item { width: 440px; height: 440px; }
+    .coverflow { height: 460px; }
+}
+
+@media (max-height: 980px) {
+    .coverflow-item { width: 280px; height: 280px; }
+    .coverflow { height: 300px; }
+}
+
+@media (max-height: 820px) {
+    .coverflow-item { width: 220px; height: 220px; }
+    .coverflow { height: 240px; }
+}
+
+@media (max-height: 760px) {
+    .coverflow-item { width: 200px; height: 200px; }
+    .coverflow { height: 220px; }
+}
+

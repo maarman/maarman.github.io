@@ -50,7 +50,7 @@ Ali Arman - Personal Website
             },
             {
                 title: "Traffic Flow Operations",
-                description: "How traffic flow -motorised and non-mototorised- move and interact in transport network"
+                description: "How traffic flow -motorized and non-mototorized- move and interact in transport network"
             },
             {
                 title: "Behavioral Modeling",
