@@ -3,7 +3,6 @@
 // - Scroll-to-top visibility + click behavior
 // - Click-to-enlarge for selected figures (.click-enlarge)
 
-
 (() => {
   const header = document.getElementById('header');
   const scrollToTopBtn = document.getElementById('scrollToTop');
@@ -32,12 +31,37 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  // ---------- Image enlarge logic (added) ----------
+  // ---------- Image enlarge logic ----------
+  let overlayResizeHandler = null; // NEW
+
   function closeImageOverlay() {
     const overlay = document.querySelector('.image-overlay');
     if (!overlay) return;
+
+    // NEW: remove resize listener if it exists
+    if (overlayResizeHandler) {
+      window.removeEventListener('resize', overlayResizeHandler);
+      overlayResizeHandler = null;
+    }
+
     overlay.remove();
     document.body.style.overflow = '';
+  }
+
+  // NEW: compute overlay image max size = min(85vw, 96vh, natural size)
+  function fitOverlayImageToViewport(overlayImg) {
+    const vwLimit = window.innerWidth * 0.85;
+    const vhLimit = window.innerHeight * 0.96;
+
+    const nw = overlayImg.naturalWidth;
+    const nh = overlayImg.naturalHeight;
+
+    if (!nw || !nh) return;
+
+    const scale = Math.min(vwLimit / nw, vhLimit / nh, 1);
+
+    overlayImg.style.maxWidth = `${Math.floor(nw * scale)}px`;
+    overlayImg.style.maxHeight = `${Math.floor(nh * scale)}px`;
   }
 
   function openImageOverlay(imgEl) {
@@ -59,6 +83,19 @@
     overlay.addEventListener('click', closeImageOverlay);
 
     document.body.appendChild(overlay);
+
+    // NEW: size correctly once loaded (naturalWidth/Height available)
+    const onLoad = () => fitOverlayImageToViewport(img);
+    if (img.complete) {
+      // If cached and already loaded
+      onLoad();
+    } else {
+      img.addEventListener('load', onLoad, { once: true });
+    }
+
+    // NEW: keep it correct on resize/orientation change
+    overlayResizeHandler = () => fitOverlayImageToViewport(img);
+    window.addEventListener('resize', overlayResizeHandler);
   }
 
   // only images explicitly marked as clickable
@@ -76,7 +113,7 @@
       closeImageOverlay();
     }
   });
-	
+
   // Ensure correct state on initial load
   updateOnScroll();
 })();

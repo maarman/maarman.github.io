@@ -952,11 +952,11 @@ body {
 }
 
 .image-overlay img {
-  max-width: none;
   width: auto;
   height: auto;
-  max-height: 96vh;
   object-fit: contain;
+  max-width: 85vw;
+  max-height: 96vh;
 
   /* for mobile */
   touch-action: pinch-zoom;
