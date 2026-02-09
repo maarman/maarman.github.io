@@ -32,13 +32,13 @@
   });
 
   // ---------- Image enlarge logic ----------
-  let overlayResizeHandler = null; 
+  let overlayResizeHandler = null; // NEW
 
   function closeImageOverlay() {
     const overlay = document.querySelector('.image-overlay');
     if (!overlay) return;
 
-    // Remove resize listener if it exists
+    // NEW: remove resize listener if it exists
     if (overlayResizeHandler) {
       window.removeEventListener('resize', overlayResizeHandler);
       overlayResizeHandler = null;
@@ -48,7 +48,7 @@
     document.body.style.overflow = '';
   }
 
-  // Compute overlay image max size = min(85vw, 96vh, natural size)
+  // NEW: compute overlay image max size = min(85vw, 96vh, natural size)
   function fitOverlayImageToViewport(overlayImg) {
     const vwLimit = window.innerWidth * 0.85;
     const vhLimit = window.innerHeight * 0.96;
@@ -84,7 +84,7 @@
 
     document.body.appendChild(overlay);
 
-    // Size correctly once loaded (naturalWidth/Height available)
+    // NEW: size correctly once loaded (naturalWidth/Height available)
     const onLoad = () => fitOverlayImageToViewport(img);
     if (img.complete) {
       // If cached and already loaded
@@ -93,7 +93,7 @@
       img.addEventListener('load', onLoad, { once: true });
     }
 
-    // Keep it correct on resize/orientation change
+    // NEW: keep it correct on resize/orientation change
     overlayResizeHandler = () => fitOverlayImageToViewport(img);
     window.addEventListener('resize', overlayResizeHandler);
   }

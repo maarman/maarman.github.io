@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ali Arman — Personal Website — My projects in multi-source heterogeneous data fusion</title>
+  <title>Ali Arman — Data Fusion</title>
   <link rel="stylesheet" href="data_fusion.css" />
 </head>
 
@@ -39,8 +39,12 @@
         <p>&nbsp;</p>
         <p>Large-scale data streams are generated continuously in transportation systems. Loop detectors, probe vehicles, and other fixed roadside sensors operate daily, at scale, and at low marginal cost. My work in data science and traffic operations is motivated by a simple but powerful premise: <strong>the value of existing data can be fundamentally expanded through intelligent fusion, inference, and reconstruction methods</strong>.</p>
         <p>&nbsp;</p>
-        <p>A central challenge in traffic analysis lies in the reconstruction of <strong>vehicle trajectories</strong>, particularly when both <strong>longitudinal motion</strong> and <strong>lateral (lane-changing) behavior</strong> are of interest. While longitudinal dynamics have been studied extensively, lane-changing maneuvers remain comparatively underexplored. The primary reason is data availability: lane-accurate trajectories are typically obtained through video-based systems, which are expensive, spatially limited, and temporally short-lived. Well-known datasets such as <a href="https://data.transportation.gov/stories/s/Next-Generation-Simulation-NGSIM-Open-Data/i5zb-xe34/"><strong>NGSIM</strong></a> and <a href="https://levelxdata.com/highd-dataset/"><strong>HighD</strong></a> are highly limited in coverage; they provide valuable insights, but at substantial financial and operational cost. Large-scale initiatives like <a href="https://i24motion.org/"><strong>I-24 Motion</strong></a> and <a href="https://zenodo.org/records/14012006"><strong>DLR-HT</strong></a> provide several hours and kilometers of coverage, but they are even more costly.&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+        <img src="../images/DF_page_fig_1.png" width="960" height="608" alt=""/>
         <p>&nbsp;</p>
+        <img src="../images/DF_in_Trajectory_Reconstruction.png" width="960" height="600" alt=""/>
+		<p>&nbsp;</p>
+		<p>A central challenge in traffic analysis lies in the reconstruction of <strong>vehicle trajectories</strong>, particularly when both <strong>longitudinal motion</strong> and <strong>lateral (lane-changing) behavior</strong> are of interest. While longitudinal dynamics have been studied extensively, lane-changing maneuvers remain comparatively underexplored. The primary reason is data availability: lane-accurate trajectories are typically obtained through video-based systems, which are expensive, spatially limited, and temporally short-lived. Well-known datasets such as <a href="https://data.transportation.gov/stories/s/Next-Generation-Simulation-NGSIM-Open-Data/i5zb-xe34/"><strong>NGSIM</strong></a> and <a href="https://levelxdata.com/highd-dataset/"><strong>HighD</strong></a> are highly limited in coverage; they provide valuable insights, but at substantial financial and operational cost. Large-scale initiatives like <a href="https://i24motion.org/"><strong>I-24 Motion</strong></a> and <a href="https://zenodo.org/records/14012006"><strong>DLR-HT</strong></a> provide several hours and kilometers of coverage, but they are even more costly.&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+		<p>&nbsp;</p>
         <p>&nbsp;In contrast, conventional traffic sensors, especially inductive loop detectors, are deployed ubiquitously and operate continuously. These data sources are traditionally considered insufficient for lane-level trajectory analysis. My data fusion projects demonstrate that this limitation is not inherent to the data itself, but rather to how it is processed. The <em>animation below</em> compares a short list of widely known trajectory datasets with the resulting dataset from my project, <strong>TAILOR</strong>, highlighting differences in spatial coverage and temporal extent.&nbsp;Beyond these well-known examples, <a href="https://www.researchsquare.com/article/rs-7497430/v1"><strong>a recent multi-institutional literature mining study</strong></a> (which I contributed to) systematically reviewed and categorized 100+ vehicle trajectory datasets and data collection initiatives.</p>
 		<p>&nbsp;</p>
 		<img src="../images/TAILOR_vs_others_HQ.gif" width="960" height="540" alt="" class="responsive-figure"/>
