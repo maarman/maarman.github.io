@@ -44,8 +44,7 @@
 			<div class="onpage-panel" id="onPagePanel" role="menu" aria-label="On This Page">
 			  <a class="onpage-link" href="#intro" role="menuitem">Traffic Flow Operations: Meaning, Importance, Toolkits</a>
 			  <a class="onpage-link" href="#CAVControl" role="menuitem">Adaptive CAV Control for Congestion Mitigation</a>
-			  <a class="onpage-link" href="#ldfcd" role="menuitem">X3</a>
-			  <a class="onpage-link" href="#rdm" role="menuitem">X4</a>
+			  <a class="onpage-link" href="#LCMChoice" role="menuitem">Choice-Based Lane-Change Modeling in Weaving Areas</a>
 			</div>
   	   </div>
 	  
@@ -120,6 +119,54 @@
       </div>
     </div>
   </section>	
+	
+
+  <!-- LCMChoice Section -->
+  <section id="LCMChoice" class="section">
+    <div class="LCMChoice-content">
+      <div class="LCMChoice-header">
+        <h2>Choice-Based Lane-Change Modeling in Weaving Areas</h2>
+
+        <p><strong>This project tackles one of the most disruptive and least predictable components of traffic flow operations: lane-changing behavior in motorway weaving areas</strong>. These locations concentrate competing incentives, route continuation, merging, diverging, and speed adaptation, within constrained space and time, making them a dominant source of turbulence, capacity drop, and safety risk. Rather than treating lane changes as exogenous disturbances or purely microscopic decisions, the project reframes them as <strong>aggregate behavioral choices that shape macroscopic traffic evolution</strong>. The motivation is both operational and scientific: weaving areas are where conventional flow models break down, and understanding how lane-change demand emerges and redistributes across lanes is essential for reliable traffic prediction, control, and infrastructure design.</p>
+        <p>&nbsp;</p>
+		<img src="../images/LCMChoice_fig_1.png" width="920" height="269" alt="" class="responsive-figure"/>
+		<p><em>Classification of LCMs into three types. Stars represent mandatory LCMs, circles depict discretionary LCMs, which are non-mandatory LCMs towards the left, and squares illustrate keep-right LCMs, which are non-mandatory LCMs towards the right. Lines represent four exemplary trajectory paths, each for one of the main OD paths inside the test weaving section, to help clarify different types of LCMs given the maneuver direction, origin, and destination of trajectory inside the weaving area.</em></p>
+		<p>&nbsp;</p>
+		<p><strong>Methodologically, the project introduces a choice-based macroscopic lane-change prediction framework grounded in behavioral modeling and statistical inference</strong>. Lane-change demand is modeled as a probabilistic choice process, explicitly linking observable traffic states, such as lane densities, speeds, and relative utilities, to aggregate lane-changing flows. By embedding discrete choice principles into a macroscopic traffic representation, the model preserves behavioral interpretability while remaining compatible with network-level analysis. The framework is rigorously estimated and validated using empirical data from weaving sections, demonstrating its ability to reproduce both spatial and temporal patterns of lane-changing activity. This combination of behavioral theory, <strong>statistical estimation, and macroscopic consistency</strong> reflects an advanced level of transport modeling where human decision-making is treated as a structured, quantifiable driver of system dynamics. (<strong><a href="https://www.sciencedirect.com/science/article/abs/pii/S0968090X24003929">Transportation Research Part C: Emerging Technologies - 2024</a></strong>).</p>
+		<p>&nbsp;</p>
+		<p><strong>To further assess the operational implications of the proposed model, the project incorporates simulation-based analysis that embeds the predicted lane-change demand into traffic flow evolution</strong>. By coupling the choice-based lane-change model with macroscopic traffic dynamics, the simulation allows the propagation effects of lane-changing activity to be examined in space and time, revealing how local behavioral choices translate into congestion formation, capacity loss, and flow redistribution across lanes. This integration is critical: it moves the model beyond static prediction and into <strong>dynamic system analysis</strong>, where feedback between behavior and traffic states can be observed and quantified. From a broader perspective, this simulation-based extension demonstrates how behaviorally grounded models can be operationalized within decision-support tools, enabling scenario testing, infrastructure evaluation, and policy analysis in environments where interactions between demand, capacity, and human choice play a central role.&nbsp;</p>
+<p>&nbsp;</p>
+		<img src="../images/LCMChoice_fig_2.png" width="920" height="401" alt="" class="responsive-figure"/>
+		<p>&nbsp;<em>The spatio-temporal scattering of LCMs of the weaver drivers, a) O1 → D2, b) O2 → D1 (see figure above for origin and destination labeling in this project).</em></p>
+		<p>&nbsp;</p>
+		<p>&nbsp;<strong>Beyond transportation, this project exemplifies how complex collective behavior can be inferred and predicted from noisy, aggregated observations</strong>. From an applied data-science perspective, the work demonstrates how discrete choice modeling, probabilistic demand estimation, and system-level validation can be combined to forecast high-impact events without relying on individual-level tracking. The resulting methodology is directly transferable to domains where competing options, constraints, and incentives drive collective outcomes, such as logistics routing, capacity allocation in networks, or resource competition in operational systems. The project highlights how <strong>interpretable, choice-based models</strong> can support decision-making, scenario testing, and policy evaluation in environments where behavior matters as much as physical constraints.</p>
+	  </div>
+
+      <div class="LCMChoice-main">
+        <div class="LCMChoice-visual">
+          <div class="LCMChoice-showcase-display">
+            <div class="LCMChoice-showcase-main">
+              <div class="LCMChoice-corner-decoration top-left"></div>
+              <div class="LCMChoice-corner-decoration bottom-right"></div>
+
+              <img src="../images/LCMChoice_fig_3.png" width="412" height="351" alt="Comparison of throughput before and after optimizations" class="click-enlarge"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="LCMChoice-info">
+          <h3>Uniqueness</h3>
+
+          <ul class="LCMChoice-feature-list">
+            <li>Choice-based macroscopic modeling of lane-change demand in motorway weaving areas.</li>
+            <li>Behaviorally interpretable framework linking traffic states to aggregate lane-changing flows.</li>
+            <li>Empirically calibrated and validated using real motorway data.</li>
+            <li>Direct relevance for capacity analysis, safety assessment, and operational traffic management.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 	
 	
 	
