@@ -46,11 +46,11 @@ Ali Arman - Personal Website
             },
             {
                 title: "Risk Analysis and Profiling",
-                description: "Modeling and pofiling risk of rare events"
+                description: "Modeling and profiling risk of rare events"
             },
             {
                 title: "Traffic Flow Operations",
-                description: "How traffic flow -motorized and non-mototorized- move and interact in transport network"
+                description: "How traffic flow -motorized and non-motorized- move and interact in transport network"
             },
             {
                 title: "Behavioral Modeling",
