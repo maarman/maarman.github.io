@@ -26,6 +26,8 @@ body {
   display: block;
 }
 
+/* Ensure anchor jumps don't hide content behind the fixed header */
+.section { scroll-margin-top: 90px; }
 
 /* Header */
 .header {
@@ -113,6 +115,109 @@ body {
 .menu-item.active { color: #fff; }
 .menu-item.active::after { width: 100%; }
 
+/* ---------------- On This Page (hamburger) ---------------- */
+.onpage {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.onpage-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.onpage-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.onpage-label {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+}
+
+.hamburger {
+  width: 18px;
+  height: 14px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  height: 2px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 2px;
+}
+
+/* Dropdown panel */
+.onpage-panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;               /* keeps it near Home */
+  min-width: 320px;
+  max-width: 420px;
+  padding: 10px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(10, 10, 12, 0.95);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+  z-index: 2000;
+
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.onpage.open .onpage-panel {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.onpage-link {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.88);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.25;
+  transition: background 0.18s ease, transform 0.18s ease;
+}
+
+.onpage-link:hover {
+  background: rgba(102, 126, 234, 0.16);
+  transform: translateX(2px);
+  color: #fff;
+}
+
+/* Mobile: keep label but prevent header overflow */
+@media (max-width: 520px) {
+  .onpage-label { display: none; }
+  .onpage-panel { min-width: 260px; }
+}
+
+.section h3 strong {
+  color: #7b7fe8;
+  text-shadow: 0 0 10px rgba(123, 127, 232, 0.35);
+}
+
 /* intro layout */
 .intro-content {
     max-width: 1400px;
@@ -152,115 +257,7 @@ body {
   text-align: left;
 }
 
-/* Two-column section: photo left, focus list right */
-.intro-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
-  margin-bottom: 80px;
-}
 
-.intro-visual {
-  position: relative;
-  height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.showcase-display {
-  position: relative;
-  width: 100%;
-  max-width: 500px;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.showcase-main {
-  position: relative;
-  width: 350px;
-  height: 400px;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-  border-radius: 30px;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  padding: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
-}
-
-.showcase-main img {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 12px;
-  object-fit: cover;
-}
-
-/* Corner decoration */
-.corner-decoration {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  border: 2px solid rgba(102, 126, 234, 0.3);
-}
-
-.corner-decoration.top-left {
-  top: -20px;
-  left: -20px;
-  border-right: none;
-  border-bottom: none;
-  border-radius: 20px 0 0 0;
-}
-
-.corner-decoration.bottom-right {
-  bottom: -20px;
-  right: -20px;
-  border-left: none;
-  border-top: none;
-  border-radius: 0 0 20px 0;
-}
-
-/* Focus list */
-.intro-info { padding-left: 40px; }
-
-.intro-info h3 {
-  font-size: 36px;
-  margin-bottom: 30px;
-  line-height: 1.3;
-  text-align: left;
-}
-
-.feature-list {
-  list-style: none;
-  margin-bottom: 40px;
-}
-
-.feature-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
-  margin-bottom: 20px;
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.9);
-  line-height: 1.6;
-}
-
-.feature-list li::before {
-  content: '\25B6'; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 50%;
-  flex-shrink: 0;
-}
 
 /* Scroll to top button (your screenshot needs it to appear once scrolled) */
 .scroll-to-top {
@@ -352,7 +349,255 @@ body {
   .intro-header p { font-size: 16px; }
 }
 
+/* Click-to-enlarge specific figures */
+.click-enlarge {
+  cursor: zoom-in;
+}
+
+/* Overlay */
+.image-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.image-overlay img {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  max-width: 85vw;
+  max-height: 96vh;
+
+  /* for mobile */
+  touch-action: pinch-zoom;
+}
+
+/* Standalone article figures (not inside showcase cards) */
+.responsive-figure {
+  display: block;
+  width: 85%;
+  max-width: 960px;  /* pick a cap you like */
+  height: auto;
+  margin: 18px auto;  /* centered */
+}
 
 
+#CAVControl {
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%);
+}
 
+/* CAVControl layout */
+.CAVControl-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px;
+}
 
+.CAVControl-header {
+    text-align: center;
+    padding-top: 40px; /* space under fixed header */
+    margin-top: -50px; /* to be customized per section */
+}
+
+.CAVControl-header h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    margin-above: 60px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 0px;
+}
+
+.CAVControl-header p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 950px; /* Text width */
+  margin: 0 auto;
+  line-height: 1.8;
+  text-align: left;
+}
+
+/* Two-column section: photo left, focus list right */
+.CAVControl-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;                /* to be customized per section */
+  align-items: center;
+  margin-top: 10px;        /* to be customized per section */
+  margin-bottom: -30px;    /* to be customized per section */
+}
+
+.CAVControl-visual {
+  position: relative;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Focus list */
+.CAVControl-info { padding-left: 40px; }
+
+.CAVControl-info h3 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.CAVControl-feature-list {
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.CAVControl-feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+.CAVControl-feature-list li::before {
+  content: '\25B6'; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .CAVControl-main {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .CAVControl-visual { height: 400px; }
+
+  .CAVControl-info {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .CAVControl-info h3 { text-align: center; }
+
+  .feature-list {
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header { padding: 0 20px; }
+
+  .logo-text { font-size: 20px; }
+
+  .CAVControl-header h2 { font-size: 36px; }
+
+  .CAVControl-info h3 { font-size: 28px; }
+  }
+  
+@media (max-width: 480px) {
+  .header { height: 70px; padding: 0 15px; }
+  .header.scrolled { height: 60px; }
+
+  .logo { width: 40px; height: 40px; }
+  .logo-text { font-size: 18px; }
+
+  .CAVControl-content { padding: 20px; }
+  .CAVControl-header { margin-bottom: 50px; }
+  .CAVControl-header p { font-size: 16px; }
+}
+
+/* CAVControl Showcase Display */
+.CAVControl-showcase-display {
+  position: relative;
+  width: 100%;
+  max-width: 580px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CAVControl-showcase-main {
+  position: relative;
+  width: 900px;
+  height: 360px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.CAVControl-showcase-main img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .header { padding: 0 20px; }
+
+  .logo-text { font-size: 20px; }
+
+  .intro-header h2 { font-size: 36px; }
+
+  .intro-info h3 { font-size: 28px; }
+
+  .CAVControl-showcase-display {
+    max-width: 350px;
+    height: 400px;
+  }
+
+  .CAVControl-showcase-main {
+    width: 100%;
+    height: 350px;
+    padding: 30px;
+  }
+    .CAVControl-corner-decoration { display: none; }
+}
+  
+/* CAVControl Corner decoration */
+.CAVControl-corner-decoration {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgba(102, 126, 234, 0.3);
+}
+
+.CAVControl-corner-decoration.top-left {
+  top: -20px;
+  left: -20px;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 20px 0 0 0;
+}
+
+.CAVControl-corner-decoration.bottom-right {
+  bottom: -20px;
+  right: -20px;
+  border-left: none;
+  border-top: none;
+  border-radius: 0 0 20px 0;
+}

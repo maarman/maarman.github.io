@@ -25,6 +25,30 @@
     </a>
 
     <nav class="main-menu" id="mainMenu">
+	  
+	    <div class="onpage" id="onPageNav">
+			<button
+			  class="onpage-btn"
+			  id="onPageBtn"
+			  type="button"
+			  aria-label="On This Page"
+			  aria-haspopup="true"
+			  aria-expanded="false"
+			>
+			  <span class="hamburger" aria-hidden="true">
+				<span></span><span></span><span></span>
+			  </span>
+			  <span class="onpage-label">On This Page</span>
+			</button>
+
+			<div class="onpage-panel" id="onPagePanel" role="menu" aria-label="On This Page">
+			  <a class="onpage-link" href="#intro" role="menuitem">Traffic Flow Operations: Meaning, Importance, Toolkits</a>
+			  <a class="onpage-link" href="#CAVControl" role="menuitem">Adaptive CAV Control for Congestion Mitigation</a>
+			  <a class="onpage-link" href="#ldfcd" role="menuitem">X3</a>
+			  <a class="onpage-link" href="#rdm" role="menuitem">X4</a>
+			</div>
+  	   </div>
+	  
       <a href="../index.html" class="menu-item active">Home</a>
     </nav>
   </header>
@@ -34,6 +58,8 @@
     <div class="intro-content">
       <div class="intro-header">
         <h2>Traffic Flow Operations</h2>
+		<h3><strong>Empirical Analysis, Statistical Inference, and Modeling</strong></h3>
+		<p>&nbsp;</p>
 
         <p> <strong> Traffic flow operations study how movement emerges from interaction</strong>, between vehicles, pedestrians, infrastructure, control rules, and human decision-making—under conditions that are inherently noisy, heterogeneous, and only partially observable. Across motorway corridors, weaving sections, and unsignalized urban crossings, my work approaches traffic flow as a <strong>complex dynamical system</strong>, where macroscopic patterns such as congestion, instability, and capacity loss arise from microscopic decisions like lane changes, gap acceptance, and speed adaptation. Understanding these systems requires more than descriptive analytics: it demands the <strong>reconstruction of latent states, the modelling of interaction mechanisms, and the quantification of uncertainty across space and time</strong>.</p>
         <p>&nbsp;</p>
@@ -46,14 +72,54 @@
 		<img src="../images/TFO_fig2.png" width="960" height="738" alt="" class="responsive-figure"/>
 		<p>&nbsp;</p>
 		<p>Beyond mobility and transportation, these projects demonstrate a transferable skill set for <strong>data-intensive, high-dimensional systems</strong> where signals are sparse, uncertainty is structural, and decisions interact across scales. The same techniques: <strong>state estimation, optimization under constraints, regime-dependent modelling, behavioral inference, and robust validation</strong>, apply directly to domains such as <strong>industrial operations, financial markets, human-AI systems, safety-critical analytics, and large-scale decision support</strong>. Traffic flow operations, in this sense, serve not merely as an application domain but as <strong>a laboratory for developing data-science methodologies that explain, predict, and ultimately shape complex systems under real-world uncertainty</strong>.&nbsp;</p>
-		<p>&nbsp;</p>
 	  </div>
 
     </div>
   </section>
 
 
-	
+  <!-- CAVControl Section -->
+  <section id="CAVControl" class="section">
+    <div class="CAVControl-content">
+      <div class="CAVControl-header">
+        <h2>Adaptive CAV Control for Congestion Mitigation</h2>
+
+        <p> <strong> This project addresses a fundamental operational challenge in modern traffic systems: how to actively mitigate congestion in mixed traffic environments where connected and automated vehicles (CAVs) coexist with human-driven vehicles</strong>. Rather than assuming full automation or idealized compliance, the work explicitly embraces partial penetration, uncertainty, and human heterogeneity. The motivation is pragmatic and systemic: even a small fraction of controllable agents, if properly orchestrated, can reshape traffic dynamics at the network level. By designing a control framework that operates directly on traffic flow evolution, the project demonstrates how congestion can be dampened, shockwaves attenuated, and overall efficiency improved without relying on infrastructure expansion. The importance of this work lies in its relevance to near-term deployment scenarios and its applicability to traffic management, active control strategies, and the transition toward intelligent mobility systems.</p>
+        <p>&nbsp;</p>
+		<img src="../images/Control_CAV_fig_1.png" width="920" height="332" alt="" class="responsive-figure"/>
+		<p>&nbsp;</p>
+		<p><strong>Methodologically, the project is grounded in a rigorous, physics-informed modeling framework that couples macroscopic traffic flow theory with adaptive control</strong>. Traffic dynamics are represented using conservation laws, with the front-tracking method employed to accurately capture discontinuities, nonlinear wave interactions, and regime transitions that standard numerical schemes often smear or misrepresent. On top of this high-fidelity representation, a two-stage adaptive CAV control strategy is developed: one stage focused on stabilizing traffic states and suppressing congestion formation, and a second stage refining control actions based on evolving system conditions. The framework is analytically consistent, computationally efficient, and explicitly validated under varying traffic compositions. This combination of theoretical soundness, numerical precision, and adaptive decision-making reflects an advanced level of transport system modeling, where control design, data-driven calibration, and system dynamics are treated as an integrated whole rather than isolated components (<strong><a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417425026302">Expert Systems with Applications - 2026</a></strong>).</p>
+		<p>&nbsp;</p>
+		<img src="../images/Control_CAV_fig_2.png" width="960" height="703" alt="" class="responsive-figure"/>
+		<p>&nbsp;</p>
+		<p>&nbsp;<strong>Beyond transportation, the project exemplifies a transferable approach to controlling complex, nonlinear, and partially observable systems under uncertainty</strong>. From an industrial and data-science perspective, the ability to model system dynamics, identify leverage points, and design adaptive interventions using limited control authority is broadly applicable to domains such as manufacturing flows, energy systems, logistics, and large-scale operations management. The results demonstrate how modest, well-targeted control actions can yield disproportionate system-level benefits—a principle that resonates across many data-driven decision environments. The skills exercised in this work—state evolution modeling, hybrid physics-based and data-informed control, scenario-robust validation, and interpretable performance assessment—translate naturally to any setting where complex systems must be steered toward stability, efficiency, and resilience without oversimplifying their underlying dynamics.</p>
+	  </div>
+
+      <div class="CAVControl-main">
+        <div class="CAVControl-visual">
+          <div class="CAVControl-showcase-display">
+            <div class="CAVControl-showcase-main">
+              <div class="CAVControl-corner-decoration top-left"></div>
+              <div class="CAVControl-corner-decoration bottom-right"></div>
+
+              <img src="../images/Control_CAV_fig_3.png" width="412" height="351" alt="Comparison of throughput before and after optimizations" class="click-enlarge"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="CAVControl-info">
+          <h3>Uniqueness</h3>
+
+          <ul class="CAVControl-feature-list">
+            <li>Physics-based traffic modeling with front-tracking to control shockwaves and congestion dynamics.</li>
+            <li>System-level congestion mitigation using limited penetration of connected and automated vehicles.</li>
+            <li>Computationally efficient framework suitable for real-time traffic operations and control.</li>
+            <li>Direct support for traffic management, C-ITS strategies, and operational decision-making.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>	
 	
 	
 	
