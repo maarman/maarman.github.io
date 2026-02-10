@@ -63,15 +63,17 @@
       <div class="PedCrash-header">
         <h2>Pedestrian Crash Severity Modeling and Risk Inference</h2>
 
-        <p> Intro ...</p>
+        <p> This project investigates <strong>pedestrian crash severity</strong> as a complex risk outcome shaped by interacting human, environmental, and infrastructural factors. While pedestrian crashes represent a relatively small share of total traffic incidents, their <strong>injury severity and societal cost are disproportionately high</strong>, making them a critical safety concern. The motivation behind this work was to move beyond descriptive or single-model analyses and to rigorously assess <strong>how different modeling paradigms capture severity mechanisms</strong>, uncertainty, and nonlinear effects. By systematically comparing statistical and machine-learning approaches, the project aims to provide both <strong>methodological clarity</strong> and <strong>practical insight</strong> into how crash severity can be more accurately modeled and interpreted for safety analysis and policy design. The dataset comes from Salt Lake City, Utah, the US.&nbsp;</p>
         <p>&nbsp;</p>
-        <img src="../images/df_1.png" width="892" height="608" alt=""/>      
+        <img src="../images/Ped_Crash_Fig_1.png" width="920" height="636" alt="" class="responsive-figure"/>      
 	    <p>&nbsp;</p>
-		<p> Method ...</p>
+		<p> The study is built on a carefully structured modeling framework that combines <strong>theoretical grounding, statistical inference, and predictive validation</strong>. A Generalized Ordered Probit model is used to explicitly represent the ordinal nature of injury severity while relaxing restrictive parallel-regression assumptions. This is complemented by a stacking ensemble that integrates heterogeneous learners to improve robustness and generalization, and by TabNet, a deep learning architecture specifically designed for structured tabular data. The models are trained, validated, and compared under consistent experimental conditions, with careful attention to <strong>model stability, class imbalance, interpretability, and out-of-sample performance</strong>. This layered approach reflects a modeling philosophy in which <strong>explanatory power, predictive accuracy, and reliability under uncertainty are treated as complementary objectives</strong>, rather than trade-offs.</p>
 		<p>&nbsp;</p>
-		<img src="../images/df_1.png" width="892" height="608" alt=""/> 
+		<p>&nbsp;From a methodological perspective, this project makes extensive use of <strong>modern machine learning and deep learning techniques</strong> tailored to safety-critical data. The stacking ensemble leverages model diversity to capture nonlinear interactions that are difficult to specify a priori, while TabNet employs <strong>sequential attention mechanisms</strong> to learn feature selection and interaction patterns directly from data, improving both performance and interpretability. Explainability tools are used to trace how different variables contribute to severity outcomes across models, allowing learned patterns to be critically assessed rather than treated as black-box results. These methods are particularly important in the context of crash severity analysis, where <strong>rare outcomes, noisy measurements, and correlated predictors</strong> are the norm rather than the exception.</p>
+        <p>&nbsp;</p>
+		<img src="../images/Ped_Crash_Fig_2.png" width="960" height="355" alt="" class="responsive-figure"/> 
 		<p>&nbsp;</p>
-		<p> Beyond ...</p>
+		<p> Beyond pedestrian safety, the project addresses a class of problems common across <strong>industrial and safety-critical domains</strong>: modeling rare but severe outcomes, learning from imbalanced datasets, integrating heterogeneous predictors, and producing results that remain interpretable for decision-makers. The combination of ordinal modeling, ensemble learning, deep neural networks, and explainable AI is directly applicable to areas such as <strong>industrial risk assessment, reliability engineering, healthcare outcome modeling, insurance analytics, and operational safety monitoring</strong>. The study demonstrates how advanced models can be embedded within a disciplined analytical workflow, one that balances statistical validity, predictive performance, and transparency, making the underlying methods transferable to any domain where <strong>high-impact risks must be quantified, explained, and acted upon before failures occur</strong>.</p>
 	  </div>
 
       <div class="PedCrash-main">
@@ -90,10 +92,10 @@
           <h3>Uniqueness</h3>
 
           <ul class="PedCrash-feature-list">
-            <li>Text.</li>
-            <li>Text.</li>
-            <li>Text.</li>
-            <li>Text.</li>
+            <li>Methodologically rigorous crash-severity modeling combining ordinal econometrics and ML/DL.</li>
+            <li>Data-driven identification of pedestrian risk factors for targeted safety interventions.</li>
+            <li>Reliable severity prediction under extreme class imbalance and rare-event conditions.</li>
+            <li>Direct relevance for policy design, insurance analytics, and safety decision support.</li>
           </ul>
         </div>
       </div>
