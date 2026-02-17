@@ -2,12 +2,70 @@
 // - Header "scrolled" state
 // - Scroll-to-top visibility + click behavior
 // - Click-to-enlarge for selected figures (.click-enlarge)
+// - "On This Page" hamburger menu (section jump)
 
 (() => {
   const header = document.getElementById('header');
   const scrollToTopBtn = document.getElementById('scrollToTop');
 
   if (!header || !scrollToTopBtn) return;
+
+  // ---------- On This Page (hamburger) ----------
+  const onPageNav = document.getElementById('onPageNav');
+  const onPageBtn = document.getElementById('onPageBtn');
+  const onPagePanel = document.getElementById('onPagePanel');
+
+  function closeOnPageMenu() {
+    if (!onPageNav || !onPageBtn) return;
+    onPageNav.classList.remove('open');
+    onPageBtn.setAttribute('aria-expanded', 'false');
+  }
+
+  function toggleOnPageMenu() {
+    if (!onPageNav || !onPageBtn) return;
+    const isOpen = onPageNav.classList.toggle('open');
+    onPageBtn.setAttribute('aria-expanded', String(isOpen));
+  }
+
+  if (onPageBtn) {
+    onPageBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleOnPageMenu();
+    });
+  }
+
+  // Close when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!onPageNav) return;
+    if (onPageNav.contains(e.target)) return;
+    closeOnPageMenu();
+  });
+
+  // Close on ESC (also closes image overlay below)
+  // Note: This will call both closeOnPageMenu and closeImageOverlay on Escape.
+  // That is intentional and harmless.
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeOnPageMenu();
+      closeImageOverlay();
+    }
+  });
+
+  // Smooth jump + close after selecting an item
+  if (onPagePanel) {
+    onPagePanel.addEventListener('click', (e) => {
+      const link = e.target.closest('a[href^="#"]');
+      if (!link) return;
+
+      e.preventDefault();
+      const id = link.getAttribute('href');
+      const target = document.querySelector(id);
+      if (!target) return;
+
+      closeOnPageMenu();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
 
   function updateOnScroll() {
     // Header background on scroll
@@ -32,13 +90,13 @@
   });
 
   // ---------- Image enlarge logic ----------
-  let overlayResizeHandler = null; // 
+  let overlayResizeHandler = null;
 
   function closeImageOverlay() {
     const overlay = document.querySelector('.image-overlay');
     if (!overlay) return;
 
-    // Remove resize listener if it exists
+    // remove resize listener if it exists
     if (overlayResizeHandler) {
       window.removeEventListener('resize', overlayResizeHandler);
       overlayResizeHandler = null;
@@ -48,7 +106,7 @@
     document.body.style.overflow = '';
   }
 
-  // Compute overlay image max size = min(85vw, 96vh, natural size)
+  // compute overlay image max size = min(85vw, 96vh, natural size)
   function fitOverlayImageToViewport(overlayImg) {
     const vwLimit = window.innerWidth * 0.85;
     const vhLimit = window.innerHeight * 0.96;
@@ -84,7 +142,7 @@
 
     document.body.appendChild(overlay);
 
-    // Size correctly once loaded (naturalWidth/Height available)
+    // size correctly once loaded (naturalWidth/Height available)
     const onLoad = () => fitOverlayImageToViewport(img);
     if (img.complete) {
       // If cached and already loaded
@@ -93,7 +151,7 @@
       img.addEventListener('load', onLoad, { once: true });
     }
 
-    // Keep it correct on resize/orientation change
+    // keep it correct on resize/orientation change
     overlayResizeHandler = () => fitOverlayImageToViewport(img);
     window.addEventListener('resize', overlayResizeHandler);
   }
@@ -105,13 +163,6 @@
     if (!target.classList.contains('click-enlarge')) return;
 
     openImageOverlay(target);
-  });
-
-  // ESC closes overlay (desktop only)
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      closeImageOverlay();
-    }
   });
 
   // Ensure correct state on initial load

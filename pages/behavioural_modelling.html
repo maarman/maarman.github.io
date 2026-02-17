@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ali Arman — Personal Website — My projects in behavioral analysis and modeling, including decision making modeling</title>
+  <title>Ali Arman — Behavioral Modeling</title>
   <link rel="stylesheet" href="behavioural_modelling.css" />
 </head>
 
@@ -25,6 +25,28 @@
     </a>
 
     <nav class="main-menu" id="mainMenu">
+	  
+	    <div class="onpage" id="onPageNav">
+			<button
+			  class="onpage-btn"
+			  id="onPageBtn"
+			  type="button"
+			  aria-label="On This Page"
+			  aria-haspopup="true"
+			  aria-expanded="false"
+			>
+			  <span class="hamburger" aria-hidden="true">
+				<span></span><span></span><span></span>
+			  </span>
+			  <span class="onpage-label">On This Page</span>
+			</button>
+
+			<div class="onpage-panel" id="onPagePanel" role="menu" aria-label="On This Page">
+			  <a class="onpage-link" href="#intro" role="menuitem">Behavioral Modeling</a>
+			  <a class="onpage-link" href="#NNDB" role="menuitem">Modeling Preferences for Pooled Automated Mobility</a>
+			</div>
+  	   </div>
+	  
       <a href="../index.html" class="menu-item active">Home</a>
     </nav>
   </header>
@@ -37,22 +59,57 @@
 
         <p> <strong> Behavioral modeling and analysis</strong> focus on understanding, quantifying, and predicting how individuals and groups make decisions under constraints, uncertainty, and trade-offs. At its core, it treats behavior as an observable outcome of latent preferences, perceptions, incentives, and contextual factors, translated into measurable choices and actions. This perspective is widely applicable across domains, ranging from mobility and energy use to marketing, finance, and human–AI interaction, because it combines rigorous statistical modeling with data-driven inference to explain <em>why</em> decisions are made, not only <em>what</em> happens. For data science practice, behavioral analysis provides a structured way to link raw data to interpretable insights, policy levers, and operational decisions.</p>
         <p>&nbsp;</p>
-        <img src="../images/BM.png" width="960" height="606" alt="Behavioral Modeling and Analysis" class="responsive-figure"/>
-        <p>&nbsp;</p>
+		<img src="../images/BM.png" width="960" height="606" alt="Behavioral Modeling and Analysis" class="responsive-figure"/>
+		<p>&nbsp;</p>
         <p><strong>Travel behavior analysis</strong> applies this behavioral lens to how people organize activities and choose when, where, how, and whether to travel. Its primary purpose is to explain and forecast demand by explicitly modeling individual decision-making rather than relying solely on aggregate trends. Applications include travel demand forecasting, pricing and incentive design, mode choice and accessibility analysis, evaluation of new mobility services, and assessment of policy interventions related to sustainability and equity. By connecting socio-demographics, activity patterns, network conditions, and perceived costs, travel behavior analysis supports evidence-based planning and business decisions in contexts where demand is elastic, heterogeneous, and sensitive to both economic and non-economic factors.</p>
         <p>&nbsp;</p>
         <p>Driving behavior analysis shifts the focus from trip-level decisions to the tactical and operational choices made during driving, such as speed selection, car-following, gap acceptance, lane changing, and responses to traffic control or assistance systems. Its objectives include understanding heterogeneity in driving styles, identifying precursors to safety-critical events, and quantifying how drivers adapt to infrastructure, traffic conditions, and vehicle technologies. Practical applications span road safety assessment, risk modeling, advanced driver-assistance systems (ADAS), connected and automated mobility, insurance analytics, and real-time traffic operations. From a data science perspective, driving behavior analysis bridges human factors with high-resolution sensor data, enabling interpretable models that inform both system design and real-time decision support. </p>
         <p>&nbsp;</p>
-        <p><strong>The methodological foundation</strong> of behavioral analysis combines econometric modeling with experimental and data-centric approaches. <strong>Discrete choice analysis</strong> models decisions as outcomes of utility maximization, allowing preferences, trade-offs, and heterogeneity to be estimated in a statistically rigorous and interpretable manner. <strong>Design of experiments</strong> provides principled strategies to generate informative data by systematically varying attributes and conditions, improving identifiability and efficiency. <strong>Revealed preference</strong> methods infer behavior from observed real-world choices, capturing actual constraints and habits, while <strong>stated preference</strong> methods elicit responses to hypothetical scenarios to evaluate new policies, products, or technologies before deployment. Together, these methods form a coherent toolkit that is transferable across domains wherever understanding and predicting human decision-making is essential.</p>
-        <p>&nbsp;</p>
-        <p>Across my projects, I have systematically applied the full spectrum of behavioral analysis methods: discrete choice analysis, rigorous data collection survey and companions for revealed preference analysis, and design of experiments for stated preference studies, covering the entire pipeline from hypothesis and assumptions definition to data collection to modeling, inference, and decision support. More recently, I have expanded this methodological foundation with <strong>unsupervised, neural-network-based classification and representation learning</strong> to uncover latent behavioral patterns and address <strong>behavioral heterogeneity</strong> at scale. This combination allows me to move seamlessly between <strong>interpretable, theory-driven models</strong> and <strong>data-driven discovery</strong>, enabling robust segmentation, explanatory insight, and predictive performance in complex, real-world settings where behavior is diverse, dynamic, and only partially observable.</p>
-        <p>&nbsp;</p>
+		<p><strong>The methodological foundation</strong> of behavioral analysis combines econometric modeling with experimental and data-centric approaches. <strong>Discrete choice analysis</strong> models decisions as outcomes of utility maximization, allowing preferences, trade-offs, and heterogeneity to be estimated in a statistically rigorous and interpretable manner. <strong>Design of experiments</strong> provides principled strategies to generate informative data by systematically varying attributes and conditions, improving identifiability and efficiency. <strong>Revealed preference</strong> methods infer behavior from observed real-world choices, capturing actual constraints and habits, while <strong>stated preference</strong> methods elicit responses to hypothetical scenarios to evaluate new policies, products, or technologies before deployment. Together, these methods form a coherent toolkit that is transferable across domains wherever understanding and predicting human decision-making is essential.</p>
+		<p>&nbsp;</p>
+		<p>Across my projects, I have systematically applied the full spectrum of behavioral analysis methods: discrete choice analysis, rigorous data collection survey and companions for revealed preference analysis, and design of experiments for stated preference studies, covering the entire pipeline from hypothesis and assumptions definition to data collection to modeling, inference, and decision support. More recently, I have expanded this methodological foundation with <strong>unsupervised, neural-network-based classification and representation learning</strong> to uncover latent behavioral patterns and address <strong>behavioral heterogeneity</strong> at scale. This combination allows me to move seamlessly between <strong>interpretable, theory-driven models</strong> and <strong>data-driven discovery</strong>, enabling robust segmentation, explanatory insight, and predictive performance in complex, real-world settings where behavior is diverse, dynamic, and only partially observable.</p>
+		<p>&nbsp;</p>
 	  </div>
 
     </div>
   </section>
 
-<!-- NNDB Section -->
+  <!-- NNDB Section -->
+  <section id="NNDB" class="section">
+    <div class="NNDB-content">
+      <div class="NNDB-header">
+        <h2>Unsupervised Profiling of Tactical Driving Styles&nbsp;</h2>
+        <h2>from Large-Scale Trajectory Data</h2>
+        <p> Text ...</p>
+      <img src="../images/df_1.png" width="892" height="608" alt=""/>      </div>
+
+      <div class="NNDB-main">
+        <div class="NNDB-visual">
+          <div class="NNDB-showcase-display">
+            <div class="NNDB-showcase-main">
+              <div class="NNDB-corner-decoration top-left"></div>
+              <div class="NNDB-corner-decoration bottom-right"></div>
+
+              <img src="../images/my_photo.jpg" width="264" height="340" alt="" class="click-enlarge"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="NNDB-info">
+          <h3>Uniqueness</h3>
+
+          <ul class="feature-list">
+            <li>Text.</li>
+            <li>Text.</li>
+            <li>Text.</li>
+            <li>Text.</li>
+            <li>Text.</li>
+            <li>Text.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
 	
 	
@@ -61,26 +118,9 @@
 <!-- SAV Section -->
 	
 	
-
-
-<!-- Women Trips -->
- 
 	
-
-
-<!-- Household Joint Model -->
-
-
-
-<!-- Students Trips -->
-
-
-
-
-<!-- Shopping Trips -->
-
-
-
+	
+	
 	
 	
   <!-- Scroll to top button -->
