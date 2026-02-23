@@ -43,7 +43,8 @@
 
 			<div class="onpage-panel" id="onPagePanel" role="menu" aria-label="On This Page">
 			  <a class="onpage-link" href="#intro" role="menuitem">Behavioral Modeling</a>
-			  <a class="onpage-link" href="#NNDB" role="menuitem">Modeling Preferences for Pooled Automated Mobility</a>
+			  <a class="onpage-link" href="#NNDB" role="menuitem">Unsupervised Profiling of Tactical Driving Styles</a>
+			  <a class="onpage-link" href="#SAV" role="menuitem">Modeling Preferences for Pooled Automated Mobility</a>
 			</div>
   	   </div>
 	  
@@ -59,12 +60,16 @@
 
         <p> <strong> Behavioral modeling and analysis</strong> focus on understanding, quantifying, and predicting how individuals and groups make decisions under constraints, uncertainty, and trade-offs. At its core, it treats behavior as an observable outcome of latent preferences, perceptions, incentives, and contextual factors, translated into measurable choices and actions. This perspective is widely applicable across domains, ranging from mobility and energy use to marketing, finance, and human–AI interaction, because it combines rigorous statistical modeling with data-driven inference to explain <em>why</em> decisions are made, not only <em>what</em> happens. For data science practice, behavioral analysis provides a structured way to link raw data to interpretable insights, policy levers, and operational decisions.</p>
         <p>&nbsp;</p>
-		<img src="../images/BM.png" width="960" height="606" alt="Behavioral Modeling and Analysis" class="responsive-figure"/>
+		<img src="../images/BM_Infographic_1.png" width="960" height="581" alt="Behavioral Modeling and Analysis" class="responsive-figure"/>
 		<p>&nbsp;</p>
         <p><strong>Travel behavior analysis</strong> applies this behavioral lens to how people organize activities and choose when, where, how, and whether to travel. Its primary purpose is to explain and forecast demand by explicitly modeling individual decision-making rather than relying solely on aggregate trends. Applications include travel demand forecasting, pricing and incentive design, mode choice and accessibility analysis, evaluation of new mobility services, and assessment of policy interventions related to sustainability and equity. By connecting socio-demographics, activity patterns, network conditions, and perceived costs, travel behavior analysis supports evidence-based planning and business decisions in contexts where demand is elastic, heterogeneous, and sensitive to both economic and non-economic factors.</p>
         <p>&nbsp;</p>
+		<img src="../images/BM_Infographic_2.png" width="960" height="574" alt="Travel Behavioral Analysis" class="responsive-figure"/>
+		<p>&nbsp;</p>
         <p>Driving behavior analysis shifts the focus from trip-level decisions to the tactical and operational choices made during driving, such as speed selection, car-following, gap acceptance, lane changing, and responses to traffic control or assistance systems. Its objectives include understanding heterogeneity in driving styles, identifying precursors to safety-critical events, and quantifying how drivers adapt to infrastructure, traffic conditions, and vehicle technologies. Practical applications span road safety assessment, risk modeling, advanced driver-assistance systems (ADAS), connected and automated mobility, insurance analytics, and real-time traffic operations. From a data science perspective, driving behavior analysis bridges human factors with high-resolution sensor data, enabling interpretable models that inform both system design and real-time decision support. </p>
         <p>&nbsp;</p>
+		<img src="../images/BM_Infographic_3.png" width="960" height="612" alt="Driving Behavioral Analysis" class="responsive-figure"/>
+		<p>&nbsp;</p>
 		<p><strong>The methodological foundation</strong> of behavioral analysis combines econometric modeling with experimental and data-centric approaches. <strong>Discrete choice analysis</strong> models decisions as outcomes of utility maximization, allowing preferences, trade-offs, and heterogeneity to be estimated in a statistically rigorous and interpretable manner. <strong>Design of experiments</strong> provides principled strategies to generate informative data by systematically varying attributes and conditions, improving identifiability and efficiency. <strong>Revealed preference</strong> methods infer behavior from observed real-world choices, capturing actual constraints and habits, while <strong>stated preference</strong> methods elicit responses to hypothetical scenarios to evaluate new policies, products, or technologies before deployment. Together, these methods form a coherent toolkit that is transferable across domains wherever understanding and predicting human decision-making is essential.</p>
 		<p>&nbsp;</p>
 		<p>Across my projects, I have systematically applied the full spectrum of behavioral analysis methods: discrete choice analysis, rigorous data collection survey and companions for revealed preference analysis, and design of experiments for stated preference studies, covering the entire pipeline from hypothesis and assumptions definition to data collection to modeling, inference, and decision support. More recently, I have expanded this methodological foundation with <strong>unsupervised, neural-network-based classification and representation learning</strong> to uncover latent behavioral patterns and address <strong>behavioral heterogeneity</strong> at scale. This combination allows me to move seamlessly between <strong>interpretable, theory-driven models</strong> and <strong>data-driven discovery</strong>, enabling robust segmentation, explanatory insight, and predictive performance in complex, real-world settings where behavior is diverse, dynamic, and only partially observable.</p>
@@ -77,8 +82,7 @@
   <section id="NNDB" class="section">
     <div class="NNDB-content">
       <div class="NNDB-header">
-        <h2>Unsupervised Profiling of Tactical Driving Styles&nbsp;</h2>
-        <h2>from Large-Scale Trajectory Data</h2>
+        <h2>Unsupervised Profiling of Tactical Driving Styles&nbsp;from Large-Scale Trajectory Data &nbsp;</h2>
         <p> This project <strong>uncovers tactical driving behavior</strong> directly from large-scale panel floating car trajectory data collected along an extended motorway corridor.&nbsp;Rather than relying on predefined behavioral labels, the objective was to <strong>reveal naturally emerging driving patterns</strong>, such as <strong>aggressiveness, conservativeness, and adaptation to congestion</strong>, through data-driven analysis of longitudinal and lateral maneuvers. The motivation stems from a critical gap in traffic safety and operations: most traffic management and risk assessment models assume homogeneous driver behavior, while <strong>real-world traffic is inherently heterogeneous</strong>. By extracting <strong>latent tactical styles</strong> from <strong>real trajectories</strong>, the study provides a behaviorally grounded basis for <strong>safety assessment, congestion management, and connected and automated mobility strategies</strong>.</p>
         <p>&nbsp;</p>
         <img src="../images/NNDB_fig_1.png" width="920" height="181" alt="" class="responsive-figure"/>      
