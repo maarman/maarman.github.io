@@ -169,6 +169,12 @@ Ali Arman Personal website, template based on TemplateMo
             border-radius: 2px;
         }
 
+		.logo img {
+		  width: 50px;     /* adjust */
+		  height: 50px;
+		  object-fit: contain;
+		}
+
         /* Home Section with Coverflow */
         .coverflow-wrapper {
             width: 100%;

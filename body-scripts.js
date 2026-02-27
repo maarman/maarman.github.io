@@ -46,7 +46,7 @@ Ali Arman - Personal Website
             },
             {
                 title: "Risk Analysis and Profiling",
-                description: "Modeling and profiling risk of rare events"
+                description: "Modeling and pofiling risk of rare events"
             },
             {
                 title: "Traffic Flow Operations",
