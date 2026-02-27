@@ -115,6 +115,12 @@ body {
 .menu-item.active { color: #fff; }
 .menu-item.active::after { width: 100%; }
 
+.logo img {
+  width: 50px;     /* adjust */
+  height: 50px;
+  object-fit: contain;
+}
+
 /* ---------------- On This Page (hamburger) ---------------- */
 .onpage {
   position: relative;
