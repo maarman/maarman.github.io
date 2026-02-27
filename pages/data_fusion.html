@@ -141,7 +141,13 @@
 		<p>&nbsp;</p>
 		<p>Methodologically, this work demonstrates high-level complex systems modeling and AI expertise by <strong>formalizing trajectory reconstruction as a Markov decision process</strong> and <strong>implementing both single-agent (SARL) and multi-agent (MARL) reinforcement learning formulations</strong>. Feasibility conditions were explicitly encoded into the environment through boundary constraints, safety margins (time-to-collision, headway, and relative distance), limits on excessive lane changes, and road-geometry compliance. These were operationalized via carefully designed <strong>state representations, structured reward functions, and action masks</strong> to ensure behavioral realism and learning stability.&nbsp;</p>
 		<p>&nbsp;</p>
-		<p>The RL agents were implemented using Deep Q-Networks (DQN), with systematic evaluation of convergence, reward loss decomposition, and generalization across varying traffic samples and actor counts. The MARL formulation demonstrated superior convergence and robustness, especially when scaling to multiple interacting vehicles, and training converged to near-optimal feasibility within a limited number of episodes and modest computational time.&nbsp;This combination of traffic theory, safety modeling, sequential decision processes, and deep learning architecture design reflects an ability to bridge transportation science and advanced AI in a principled and deployable way.</p>
+		<img src="../images/RL_fig_2.png" width="916" height="919" alt="" class="responsive-figure"/> 
+		<p>&nbsp;</p>
+		<p>The RL agents were implemented using <strong>Deep Q-Networks (DQN)</strong>, with systematic evaluation of convergence, reward loss decomposition, and generalization across varying traffic samples and actor counts. <strong>The MARL formulation demonstrated superior convergence and robustness, especially when scaling to multiple interacting vehicles, and training converged to near-optimal feasibility within a limited number of episodes and modest computational time</strong>.&nbsp;This combination of traffic theory, safety modeling, sequential decision processes, and deep learning architecture design reflects an ability to bridge transportation science and advanced AI in a principled and deployable way.</p>
+		<p>&nbsp;</p>
+		<img src="../images/RL_fig_3.png" width="916" height="919" alt="" class="responsive-figure"/> 
+		<p>&nbsp;</p>
+		<p>Beyond transportation, this methodology highlights a transferable capability: constructing scalable, generalizable AI pipelines that learn structured behavior under physical and operational constraints. The framework is not limited to motorway lane changes; it can be adapted to domains where synthetic yet behaviorally realistic data are required, such as generating near-miss or crash scenarios for safety analytics, stress-testing autonomous systems, augmenting limited datasets for machine learning, or simulating agent interactions in logistics and robotics. By embedding domain constraints directly into the learning environment, the approach produces data that are both physically plausible and statistically consistent, enabling reliable synthetic data generation in settings where rare events or hazardous scenarios cannot be easily observed in real life. This positions the method as a general AI-based reconstruction and data-generation engine, applicable far beyond the specific traffic segment studied.</p>
       </div>
 
       <div class="RLTR-main">
@@ -151,7 +157,7 @@
               <div class="RLTR-corner-decoration top-left"></div>
               <div class="RLTR-corner-decoration bottom-right"></div>
 
-              <img src="../images/RL_fig_3.png" width="440" height="310" alt="" class="click-enlarge"/>
+              <img src="../images/RL_fig_4.png" width="440" height="310" alt="" class="click-enlarge"/>
             </div>
           </div>
         </div>
