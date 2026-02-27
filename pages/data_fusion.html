@@ -60,17 +60,17 @@
       <div class="intro-header">
         <h2>Data Fusion</h2>
 
-        <p> Across science and engineering, innovation is increasingly driven by sophisticated and expensive data collection technologies. At the same time, vast amounts of already available data remain systematically underexploited. This is often justified by assumed limitations in accuracy, assumptions that are frequently made before the full potential of modern data fusion methods is explored.&nbsp;</p>
+        <p> Across science and engineering, innovation is increasingly driven by sophisticated and expensive data collection technologies. At the same time, <strong>vast amounts of already available data remain systematically underexploited</strong>. This is <strong>often justified by assumed limitations in accuracy</strong>, assumptions that are frequently made before the full potential of modern <strong>data fusion</strong> methods is explored.&nbsp;</p>
         <p>&nbsp;</p>
         <p>Large-scale data streams are generated continuously in transportation systems. Loop detectors, probe vehicles, and other fixed roadside sensors operate daily, at scale, and at low marginal cost. My work in data science and traffic operations is motivated by a simple but powerful premise: <strong>the value of existing data can be fundamentally expanded through intelligent fusion, inference, and reconstruction methods</strong>.</p>
         <p>&nbsp;</p>
-        <img src="../images/DF_page_fig_1.png" width="960" height="608" alt=""/>
+        <img src="../images/DF_page_fig_1.png" width="960" height="608" alt="" class="responsive-figure"/>
         <p>&nbsp;</p>
-        <img src="../images/DF_in_Trajectory_Reconstruction.png" width="960" height="600" alt=""/>
-		<p>&nbsp;</p>
 		<p>A central challenge in traffic analysis lies in the reconstruction of <strong>vehicle trajectories</strong>, particularly when both <strong>longitudinal motion</strong> and <strong>lateral (lane-changing) behavior</strong> are of interest. While longitudinal dynamics have been studied extensively, lane-changing maneuvers remain comparatively underexplored. The primary reason is data availability: lane-accurate trajectories are typically obtained through video-based systems, which are expensive, spatially limited, and temporally short-lived. Well-known datasets such as <a href="https://data.transportation.gov/stories/s/Next-Generation-Simulation-NGSIM-Open-Data/i5zb-xe34/"><strong>NGSIM</strong></a> and <a href="https://levelxdata.com/highd-dataset/"><strong>HighD</strong></a> are highly limited in coverage; they provide valuable insights, but at substantial financial and operational cost. Large-scale initiatives like <a href="https://i24motion.org/"><strong>I-24 Motion</strong></a> and <a href="https://zenodo.org/records/14012006"><strong>DLR-HT</strong></a> provide several hours and kilometers of coverage, but they are even more costly.&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
 		<p>&nbsp;</p>
-        <p>&nbsp;In contrast, conventional traffic sensors, especially inductive loop detectors, are deployed ubiquitously and operate continuously. These data sources are traditionally considered insufficient for lane-level trajectory analysis. My data fusion projects demonstrate that this limitation is not inherent to the data itself, but rather to how it is processed. The <em>animation below</em> compares a short list of widely known trajectory datasets with the resulting dataset from my project, <strong>TAILOR</strong>, highlighting differences in spatial coverage and temporal extent.&nbsp;Beyond these well-known examples, <a href="https://www.researchsquare.com/article/rs-7497430/v1"><strong>a recent multi-institutional literature mining study</strong></a> (which I contributed to) systematically reviewed and categorized 100+ vehicle trajectory datasets and data collection initiatives.</p>
+		<img src="../images/DF_in_Trajectory_Reconstruction.png" width="960" height="600" alt="" class="responsive-figure"/>
+	    <p>&nbsp;</p>
+        <p>In contrast, conventional traffic sensors, especially inductive loop detectors, are deployed ubiquitously and operate continuously. These data sources are traditionally considered insufficient for lane-level trajectory analysis. My data fusion projects demonstrate that this limitation is not inherent to the data itself, but rather to how it is processed. The <em>animation below</em> compares a short list of widely known trajectory datasets with the resulting dataset from my project, <strong>TAILOR</strong>, highlighting differences in spatial coverage and temporal extent.&nbsp;Beyond these well-known examples, <a href="https://www.researchsquare.com/article/rs-7497430/v1"><strong>a recent multi-institutional literature mining study</strong></a> (which I contributed to) systematically reviewed and categorized 100+ vehicle trajectory datasets and data collection initiatives.</p>
 		<p>&nbsp;</p>
 		<img src="../images/TAILOR_vs_others_HQ.gif" width="960" height="540" alt="" class="responsive-figure"/>
 		<p>&nbsp;</p>
@@ -90,19 +90,23 @@
       <div class="tfc-header">
         <h2>Traffic Flow Crystallization (TFC)</h2>
 
-        <p> I developed a data-fusion methodology that turns conventional loop-detector individual vehicle data (IVD) into lane-level trajectory approximations, including inference of lane-changing maneuvers. The motivation is practical: loop detectors permanently monitor most motorways and produce years of data, but those logs are typically treated as “cross-section only” and therefore discarded for lane-change and behavior studies. This work shows that, under realistic detector spacing (on the order of hundreds of meters), that assumption is unnecessarily conservative.</p>
+        <p> I developed <strong>a data-fusion methodology that turns conventional loop-detector individual vehicle data (IVD) into lane-level trajectory approximations, including inference of lane-changing maneuvers</strong>. The motivation is practical: loop detectors permanently monitor most motorways and produce years of data, but those logs are typically treated as “cross-section only” and therefore discarded for lane-change and behavior studies. This work shows that, under realistic detector spacing (on the order of hundreds of meters), that assumption is unnecessarily conservative.</p>
         <p>&nbsp;</p>
-        <p> At the core is a probabilistic vehicle re-identification (ReID) engine that matches the same vehicle across successive, lane-specific detector stations by combining three complementary similarity cues, vehicle length, passage time, and passage speed, within a Bayesian likelihood formulation. The method proceeds in two stages: it first locks in extremely reliable lane-keeping matches, then uses those matches as dynamic boundary conditions to recursively resolve the harder cases, including lane changes. This “growth” mechanism is what I refer to as Traffic Flow Crystallization.</p>
+        <p> At the core is a <strong>probabilistic vehicle re-identification (ReID)</strong> engine that matches the same vehicle across successive, lane-specific detector stations by <strong>combining three complementary similarity cues, vehicle length, passage time, and passage speed, within a Bayesian likelihood formulation</strong>. The method proceeds in two stages: it first locks in extremely reliable lane-keeping matches, then uses those matches as dynamic boundary conditions to recursively resolve the harder cases, including lane changes. This “growth” mechanism is what I refer to as <strong>Traffic Flow Crystallization</strong>.</p>
         <p>&nbsp;</p>
-        <p> The pipeline produces (I) reconstructed trajectories at a fine temporal resolution and (II) inferred lane changes with an estimated location between detector stations. I validated the method with CCTV-based ground truth for re-identification and lane-change counts, and with centimeter-accurate differential GPS probe trajectories to quantify longitudinal trajectory error and the uncertainty bounds of inferred lane-change locations. In the reported case study, the method achieves &gt;96% vehicle re-identification success (and higher in non-congested conditions) and yields lane-change counts with only a small underestimation relative to ground truth (<strong><a href="https://trid.trb.org/view/2117815">Transportation Research Board - 2023</a></strong>&nbsp;&amp; <strong><a href="https://ieeexplore.ieee.org/document/11034669">IEEE Transactions on Intelligent Transportation Systems - 2025</a></strong>).&nbsp;</p>
+		<img src="../images/TFC_ReID_fig.png" width="1045" height="371" alt="" class="responsive-figure"/>
+		<p>&nbsp;</p>
+        <p> The pipeline produces (I) reconstructed trajectories at a fine temporal resolution and (II) inferred lane changes with an estimated location between detector stations. The results are <strong>validated with CCTV-based ground truth for re-identification and lane-change counts</strong>, and with centimeter-accurate differential GPS probe trajectories to quantify longitudinal trajectory error and the uncertainty bounds of inferred lane-change locations. <strong>In the reported case study, the method achieves &gt;96% vehicle re-identification success</strong> (and higher in non-congested conditions) and yields lane-change counts with only a small underestimation relative to ground truth (<strong><a href="https://trid.trb.org/view/2117815">Transportation Research Board - 2023</a></strong>&nbsp;&amp; <strong><a href="https://ieeexplore.ieee.org/document/11034669">IEEE Transactions on Intelligent Transportation Systems - 2025</a></strong>).&nbsp;</p>
         <p>&nbsp;</p>
         <p>This contribution is not “another dataset,” but a scalable way to convert existing infrastructure into trajectory-like information, enabling lane-change analytics and behavior studies over long corridors and long time periods without relying on expensive camera deployments.</p>
 		<p>&nbsp;</p>
 		<img src="../images/tfc.png" width="1045" height="371" alt="" class="responsive-figure"/>
 		<p><em>A sample of resulting trajectories: 5 minutes and 400 meters, including lane changes.</em></p>
 		<p>&nbsp;</p>
-		<p>&nbsp;As a methodological by-product of the TFC, I developed a segment travel time estimation method based on individual vehicle data from loop detectors. The method enables accurate estimation of lane-based segment travel times between detector stations. The method achieves high accuracy in both uncongested and congested conditions (<strong><a href="https://ieeexplore.ieee.org/abstract/document/10421955">IEEE 26th ITSC- 2023</a></strong>).</p>
-</div>
+		<p>As a methodological by-product of the TFC, I developed a segment travel time estimation method based on individual vehicle data from loop detectors. The method enables accurate estimation of lane-based segment travel times between detector stations. The method achieves high accuracy in both uncongested and congested conditions (<strong><a href="https://ieeexplore.ieee.org/abstract/document/10421955">IEEE 26th ITSC- 2023</a></strong>).</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+      </div>
 
       <div class="tfc-main">
         <div class="tfc-visual">
@@ -110,7 +114,7 @@
             <div class="showcase-main"><img src="../images/ReID.png" width="663" height="471" alt="Vehicle Re-identification" class="click-enlarge"/>
               <div class="corner-decoration top-left"></div>
               <div class="corner-decoration bottom-right"></div>
-</div>
+            </div>
           </div>
         </div>
 
@@ -233,7 +237,9 @@
     <div class="rdm-content">
       <div class="rdm-header">
         <h2>Lane-level Routable Digital Maps</h2>
-
+		<h3><strong>&nbsp;Lane-level routable digital map reconstruction for motorway networks using low-precision GPS data&nbsp;</strong></h3>
+        <h3>Part of&nbsp; <a href="https://trimis.ec.europa.eu/project/concorda">CEF-project CONCORDA</a>&nbsp;</h3>
+        <p>&nbsp;</p>
         <p> A central requirement for all my data-fusion and trajectory-reconstruction work is the availability of a <strong>valid, lane-level routable digital map (RDM)</strong>. Without such a map, neither longitudinal alignment of sensors nor lateral consistency of vehicle trajectories can be guaranteed. This project was driven by the recognition that existing commercial or open maps are often misaligned, lane-incomplete, or incompatible with real traffic data, especially when the goal is to study lane-level operations and maneuvers. I therefore developed a method to reconstruct lane-level routable maps directly from observed vehicle behavior, ensuring that the resulting map is not only geometrically coherent but also fully consistent with the data streams used for traffic analysis and modeling.</p>
         <p>&nbsp;</p>
         <p>&nbsp;From an industrial perspective, this work transforms low-precision, large-scale GPS trajectory data into a <strong>lane-accurate digital asset</strong> that supports advanced traffic analytics without reliance on costly mapping campaigns or proprietary HD maps. The resulting maps are routable, lane-consistent, and validated against traffic measurements, making them suitable for applications such as sensor alignment, corridor-level monitoring, lane-based performance analysis, and large-scale behavior modeling. Because the maps are derived from actual driving patterns, they remain robust in complex motorway environments such as merges, diverges, and weaving sections, where traditional density-based or manually curated maps often fail. This enables operators and mobility platforms to deploy lane-level intelligence across wide networks using data they already collect.</p>
