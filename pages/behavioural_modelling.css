@@ -93,7 +93,7 @@ body {
 /* Mobile layout: header becomes 2 rows (brand on top, buttons below) */
 @media (max-width: 650px) {
   .header {
-    height: auto;            /* critical: let it grow */
+    height: 110px;            /* critical: let it grow */
     padding: 10px 15px;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -101,7 +101,7 @@ body {
   }
 
   .header.scrolled {
-    height: auto;            /* prevent forcing back to 60px */
+    height: 110px;            /* prevent forcing back to 60px */
   }
 
   .logo-container {
