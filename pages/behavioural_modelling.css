@@ -78,43 +78,6 @@ body {
   letter-spacing: -0.5px;
 }
 
-/* Allow the brand/title area to shrink and wrap instead of overflowing */
-.logo-container { 
-  min-width: 0; 
-}
-
-.logo-text {
-  min-width: 0;
-  white-space: normal;       /* allow wrapping */
-  overflow-wrap: anywhere;   /* break long chunks safely */
-  line-height: 1.1;
-}
-
-/* Mobile layout: header becomes 2 rows (brand on top, buttons below) */
-@media (max-width: 650px) {
-  .header {
-    height: 110px;            /* critical: let it grow */
-    padding: 10px 15px;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    row-gap: 10px;
-  }
-
-  .header.scrolled {
-    height: 110px;            /* prevent forcing back to 60px */
-  }
-
-  .logo-container {
-    flex: 1 1 100%;          /* full width row */
-  }
-
-  .main-menu {
-    flex: 0 0 100%;          /* second row */
-    justify-content: flex-end;
-    gap: 16px;               /* smaller gap on mobile */
-  }
-}
-
 
 /* Menu */
 .main-menu {
