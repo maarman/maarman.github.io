@@ -520,12 +520,14 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 /* Showcase main panel: .NNDB-showcase-main, .SAV-showcase-main, ... */
 .section [class$="-showcase-main"]{
   position: relative;
-  width: var(--showcase-main-w);
+  width: 100%;
+  max-width: var(--showcase-main-w);
   height: var(--showcase-main-h);
   background: linear-gradient(
     135deg,
@@ -540,13 +542,20 @@ body{
   justify-content: center;
   backdrop-filter: blur(10px);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .section [class$="-showcase-main"] img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
   max-width: 100%;
   max-height: 100%;
   border-radius: 12px;
-  object-fit: cover;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
 }
 
 /* Corner decoration: .NNDB-corner-decoration, .SAV-corner-decoration, ... */
@@ -576,7 +585,7 @@ body{
 /* =========================================================
    PER-SECTION BACKGROUNDS (kept exactly as in your file)
    ========================================================= */
-#intro
+#intro,
 #NNDB,
 #SAV,
 #Women,
