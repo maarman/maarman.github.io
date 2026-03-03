@@ -640,8 +640,6 @@ body{
     height: var(--showcase-768-main-h);
     padding: var(--showcase-768-main-pad);
   }
-
-  .section [class*="-corner-decoration"]{ display: none; }
 }
 
 /* 480px: mobile header + mobile content typography + spacing */
