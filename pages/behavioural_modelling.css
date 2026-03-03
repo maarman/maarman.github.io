@@ -520,7 +520,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* Showcase main panel: .NNDB-showcase-main, .SAV-showcase-main, ... */
@@ -543,7 +543,7 @@ body{
   backdrop-filter: blur(10px);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .section [class$="-showcase-main"] img{
@@ -556,17 +556,20 @@ body{
   border-radius: 12px;
   object-fit: contain;
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 /* Corner decoration: .NNDB-corner-decoration, .SAV-corner-decoration, ... */
-.section [class$="-corner-decoration"]{
+.section [class*="-corner-decoration"]{
   position: absolute;
-  width: 80px;
-  height: 80px;
-  border: 2px solid rgba(102, 126, 234, 0.3);
+  width: 64px;
+  height: 64px;
+  border: 2px solid rgba(102, 126, 234, 0.85);
+  z-index: 3;
+  pointer-events: none;
 }
 
-.section [class$="-corner-decoration"].top-left{
+.section [class*="-corner-decoration"].top-left{
   top: -20px;
   left: -20px;
   border-right: none;
@@ -574,7 +577,7 @@ body{
   border-radius: 20px 0 0 0;
 }
 
-.section [class$="-corner-decoration"].bottom-right{
+.section [class*="-corner-decoration"].bottom-right{
   bottom: -20px;
   right: -20px;
   border-left: none;
@@ -638,7 +641,7 @@ body{
     padding: var(--showcase-768-main-pad);
   }
 
-  .section [class$="-corner-decoration"]{ display: none; }
+  .section [class*="-corner-decoration"]{ display: none; }
 }
 
 /* 480px: mobile header + mobile content typography + spacing */
