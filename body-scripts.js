@@ -16,6 +16,13 @@ Ali Arman - Personal Website
         let currentIndex = 3;
         let isAnimating = false;
 
+		// ALWAYS start at Home on refresh
+		window.addEventListener('load', () => {
+			history.replaceState(null, null, '#home');
+			window.scrollTo(0, 0);
+		});
+
+
         // Mobile menu toggle
         menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('active');
@@ -49,8 +56,8 @@ Ali Arman - Personal Website
                 description: "Modeling and pofiling risk of rare events"
             },
             {
-                title: "Traffic Flow Operations",
-                description: "How traffic flow -motorized and non-motorized- move and interact in transport networks"
+                title: "Dynamic Systems Operations",
+                description: "How dynamic systems work? How their agents interact? Particularly how traffic flow -motorized and non-motorized- move and interact in transportation networks"
             },
             {
                 title: "Behavioral Modeling",

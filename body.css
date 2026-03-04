@@ -33,11 +33,11 @@ Ali Arman Personal website, template based on TemplateMo
             justify-content: center;
         }
 
-        #home {
+        #AoI {
             background: radial-gradient(ellipse at center, #1a1a2e 0%, #0f0f0f 100%);
         }
 
-        #about {
+        #home {
             background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%);
         }
 
@@ -175,7 +175,7 @@ Ali Arman Personal website, template based on TemplateMo
 		  object-fit: contain;
 		}
 
-        /* Home Section with Coverflow */
+        /* AoI Section with Coverflow */
         .coverflow-wrapper {
             width: 100%;
 
@@ -382,20 +382,20 @@ Ali Arman Personal website, template based on TemplateMo
             letter-spacing: 2px;
         }
 
-        /* About Section */
-        .about-content {
+        /* Home Section */
+        .home-content {
             max-width: 1400px;
             margin: 0 auto;
             padding: 40px;
             color: white;
         }
 
-        .about-header {
+        .home-header {
             text-align: center;
             margin-bottom: 60px;
         }
 
-        .about-header h2 {
+        .home-header h2 {
             font-size: 48px;
 			margin-top: 60px;
             margin-bottom: 20px;
@@ -405,7 +405,7 @@ Ali Arman Personal website, template based on TemplateMo
             background-clip: text;
         }
 
-        .about-header p {
+        .home-header p {
     font-size: 20px;
     color: rgba(255, 255, 255, 0.8);
     max-width: 900px;
@@ -414,7 +414,7 @@ Ali Arman Personal website, template based on TemplateMo
     text-align: left;
         }
 
-        .about-main {
+        .home-main {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 80px;
@@ -422,7 +422,7 @@ Ali Arman Personal website, template based on TemplateMo
             margin-bottom: 40px;
         }
 
-        .about-visual {
+        .home-visual {
             position: relative;
             height: 600px;
             display: flex;
@@ -547,17 +547,17 @@ Ali Arman Personal website, template based on TemplateMo
             border-radius: 0 0 20px 0;
         }
 
-        .about-info {
+        .home-info {
             padding-left: 40px;
         }
 
-        .about-info h3 {
+        .home-info h3 {
             font-size: 36px;
             margin-bottom: 30px;
             line-height: 1.3;
         }
 
-        .about-info p {
+        .home-info p {
             font-size: 18px;
 			text-align: left;
             color: rgba(255, 255, 255, 0.8);
@@ -934,16 +934,16 @@ Ali Arman Personal website, template based on TemplateMo
 
         /* Mobile Responsive */
         @media (max-width: 1024px) {
-            .about-main {
+            .home-main {
                 grid-template-columns: 1fr;
                 gap: 60px;
             }
 
-            .about-visual {
+            .home-visual {
                 height: 400px;
             }
 
-            .about-info {
+            .home-info {
                 padding-left: 0;
                 text-align: center;
             }
@@ -1055,15 +1055,15 @@ Ali Arman Personal website, template based on TemplateMo
                 font-size: 20px;
             }
 
-            .about-header h2 {
+            .home-header h2 {
                 font-size: 36px;
             }
 
-            .about-info h3 {
+            .home-info h3 {
                 font-size: 28px;
             }
 
-            .about-visual {
+            .home-visual {
                 height: 400px;
             }
 
@@ -1149,7 +1149,7 @@ Ali Arman Personal website, template based on TemplateMo
                 height: 180px;
             }
 
-            .about-content,
+            .home-content,
             .contact-content {
                 padding: 20px;
             }
