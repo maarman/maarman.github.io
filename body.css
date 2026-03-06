@@ -178,12 +178,12 @@ Ali Arman Personal website, template based on TemplateMo
         /* AoI Section with Coverflow */
         .coverflow-wrapper {
             width: 100%;
-
-            height: 100vh;
+			min-height: 870px;
+            height: auto;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-top: 0px;
+            padding-top: 30px;
 			position: relative;
         }
 
@@ -324,7 +324,7 @@ Ali Arman Personal website, template based on TemplateMo
         /* Info display */
         .info {
             position: absolute;
-            top: 150px;
+            top: 20px;
             left: 50%;
             transform: translateX(-50%);
             color: white;
@@ -975,12 +975,14 @@ Ali Arman Personal website, template based on TemplateMo
             }
 			
 			.coverflow-wrapper {
+			  width: 100%;
+			  min-height: 890px;
 			  align-items: flex-start;
-			  padding-top: 170px;
+			  padding-top: 250px;
 			}
 
 			.coverflow {
-			  margin-top: 70px;
+			  margin-top: 80px;
 			}
 
         }
@@ -1116,12 +1118,14 @@ Ali Arman Personal website, template based on TemplateMo
             }
 			
 			.coverflow-wrapper {
+			  width: 100%;
+			  min-height: 650px;
 			  align-items: flex-start;
-			  padding-top: 170px;
+			  padding-top: 90px;
 			}
 
 			.coverflow {
-			  margin-top: 70px;
+			  margin-top: 0px;
 			}
         }
 
@@ -1271,18 +1275,20 @@ Ali Arman Personal website, template based on TemplateMo
             }
 			
 			.coverflow-wrapper {
-			  padding-top: 150px;
+			  width: 100%;
+			  min-height: 560px;
+			  padding-top: 90px;
 			}
 
 			.coverflow {
-			  margin-top: 60px;
+			  margin-top: 0px;
 			}
 
         }
 
 @media (max-height: 1040px) {
-    .coverflow-item { width: 440px; height: 440px; }
-    .coverflow { height: 460px; }
+    .coverflow-item { width: 480px; height: 480px; }
+    .coverflow { height: 500px; }
 }
 
 @media (max-height: 980px) {
@@ -1296,8 +1302,8 @@ Ali Arman Personal website, template based on TemplateMo
 }
 
 @media (max-height: 760px) {
-    .coverflow-item { width: 200px; height: 200px; }
-    .coverflow { height: 220px; }
+    .coverflow-item { width: 220px; height: 220px; }
+    .coverflow { height: 240px; }
 }
 
 
@@ -1676,4 +1682,25 @@ Ali Arman Personal website, template based on TemplateMo
   max-width: 960px;
   height: auto;
   margin: 18px auto;
+}
+
+
+.projects-heading{
+    width:100%;
+    padding:40px 20px 10px 20px;
+    text-align:center;
+}
+
+.projects-heading h2{
+    font-size:48px;
+    font-weight:700;
+    margin:0;
+    background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+
+.projects-heading{
+    background: radial-gradient(ellipse at center,#1a1a2e 0%,#0f0f0f 100%);
 }
