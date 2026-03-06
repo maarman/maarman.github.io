@@ -1668,3 +1668,12 @@ Ali Arman Personal website, template based on TemplateMo
     }
 }
 
+
+/* Standalone article figures */
+.responsive-figure{
+  display: block;
+  width: 85%;
+  max-width: 960px;
+  height: auto;
+  margin: 18px auto;
+}
