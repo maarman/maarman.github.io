@@ -373,3 +373,123 @@ Ali Arman - Personal Website
         updateCoverflow();
         container.focus();
         startAutoplay();
+
+
+		/* =========================================================
+		   Home hero stars and spark points
+		   ========================================================= */
+
+		function initHeroGraphic() {
+			const hero = document.querySelector('.hero-graphic');
+			const canvas = document.getElementById('heroStars');
+
+			if (!hero || !canvas) return;
+
+			const ctx = canvas.getContext('2d');
+			let stars = [];
+			let animationFrameId = null;
+
+			function resizeCanvas() {
+				const rect = hero.getBoundingClientRect();
+				const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+				canvas.width = Math.floor(rect.width * dpr);
+				canvas.height = Math.floor(rect.height * dpr);
+				canvas.style.width = rect.width + 'px';
+				canvas.style.height = rect.height + 'px';
+
+				ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+				createStars(rect.width, rect.height);
+				createSparkPoints();
+			}
+
+			function createStars(width, height) {
+				const count = Math.max(90, Math.floor((width * height) / 9000));
+				stars = [];
+
+				for (let i = 0; i < count; i += 1) {
+					stars.push({
+						x: Math.random() * width,
+						y: Math.random() * height,
+						r: Math.random() * 1.7 + 0.3,
+						a: Math.random() * 0.8 + 0.15,
+						tw: Math.random() * 0.02 + 0.003
+					});
+				}
+			}
+
+			function drawStars() {
+				const width = canvas.clientWidth;
+				const height = canvas.clientHeight;
+
+				ctx.clearRect(0, 0, width, height);
+
+				for (const s of stars) {
+					s.a += (Math.random() - 0.5) * s.tw;
+					if (s.a < 0.12) s.a = 0.12;
+					if (s.a > 1) s.a = 1;
+
+					ctx.beginPath();
+					ctx.fillStyle = `rgba(255,255,255,${s.a})`;
+					ctx.shadowBlur = s.r * 7;
+					ctx.shadowColor = 'rgba(202,170,255,0.65)';
+					ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+					ctx.fill();
+				}
+
+				ctx.shadowBlur = 0;
+				animationFrameId = requestAnimationFrame(drawStars);
+			}
+
+			function createSparkPoints() {
+				hero.querySelectorAll('.spark').forEach(el => el.remove());
+
+				const sparkConfig = [
+					{ left: '17%', top: '33%', size: 'sm', dur: '4.2s', delay: '0.4s' },
+					{ left: '22%', top: '57%', size: '', dur: '5.1s', delay: '1.1s' },
+					{ left: '31%', top: '24%', size: '', dur: '4.8s', delay: '0.6s' },
+					{ left: '40%', top: '18%', size: 'sm', dur: '3.9s', delay: '1.7s' },
+					{ left: '53%', top: '78%', size: 'lg', dur: '5.6s', delay: '0.3s' },
+					{ left: '64%', top: '21%', size: '', dur: '4.6s', delay: '1.4s' },
+					{ left: '72%', top: '30%', size: 'sm', dur: '5.4s', delay: '0.8s' },
+					{ left: '82%', top: '17%', size: '', dur: '4.1s', delay: '1.2s' },
+					{ left: '86%', top: '56%', size: 'lg', dur: '6s', delay: '0.5s' },
+					{ left: '14%', top: '86%', size: '', dur: '5.5s', delay: '1.3s' },
+					{ left: '34%', top: '90%', size: 'sm', dur: '4.7s', delay: '0.9s' },
+					{ left: '76%', top: '86%', size: '', dur: '5.2s', delay: '1.5s' }
+				];
+
+				sparkConfig.forEach(cfg => {
+					const spark = document.createElement('span');
+					spark.className = `spark ${cfg.size}`.trim();
+					spark.style.left = cfg.left;
+					spark.style.top = cfg.top;
+					spark.style.setProperty('--dur', cfg.dur);
+					spark.style.setProperty('--delay', cfg.delay);
+					hero.appendChild(spark);
+				});
+			}
+
+			resizeCanvas();
+			drawStars();
+
+			let resizeTimer = null;
+			window.addEventListener('resize', () => {
+				clearTimeout(resizeTimer);
+				resizeTimer = setTimeout(resizeCanvas, 120);
+			});
+
+			document.addEventListener('visibilitychange', () => {
+				if (document.hidden) {
+					cancelAnimationFrame(animationFrameId);
+				} else {
+					cancelAnimationFrame(animationFrameId);
+					drawStars();
+				}
+			});
+		}
+
+		initHeroGraphic();
+
+
