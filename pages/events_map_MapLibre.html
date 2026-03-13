@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flanders Road Events Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.7.0/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="./events_map_MapLibre.css?v=20260313_140510">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="panel">
+      <h1>Flanders Road Events</h1>
+      <p class="subtitle">Auto-generated from the data published by <a href="https://www.vlaanderen.be/datavindplaats/catalogus/datex2-feed-verkeerscentrum-vlaanderen" target="_blank" rel="noopener noreferrer">MOW</a> on 2026-03-13 14:05:02.</p>
+
+      <div class="group">
+        <h2>Event Layers</h2>
+        <label class="toggle">
+          <input type="checkbox" id="toggle-points" checked>
+          <span>Point-Based Events</span>
+        </label>
+        <label class="toggle">
+          <input type="checkbox" id="toggle-lines" checked>
+          <span>Corridor Events</span>
+        </label>
+      </div>
+
+      <div class="group">
+        <h2>Event Types</h2>
+        <div class="legend-item"><span class="swatch swatch-accident"></span> Traffic Accidents</div>
+        <div class="legend-item"><span class="swatch swatch-abnormal"></span> Abnormal Traffic</div>
+        <div class="legend-item"><span class="swatch swatch-other-point"></span> Other Events</div>
+        <div class="legend-item"><span class="swatch swatch-line"></span> Corridor Management Events</div>
+      </div>
+    </section>
+    <section id="map" aria-label="Road events map"></section>
+  </main>
+
+  <script src="https://unpkg.com/maplibre-gl@5.7.0/dist/maplibre-gl.js"></script>
+  <script src="./events_map_MapLibre.js?v=20260313_140510"></script>
+</body>
+</html>
